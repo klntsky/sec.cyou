@@ -6,8 +6,7 @@
         "description": "Trade with up to 250x leverage across crypto, forex, metals and more",
         "tags": ["perpetual exchange"],
         "networks": [],
-        "coins": [],
-        "opensource": false
+        "coins": []
     },
     {
         "name": "gTrade",
@@ -16,8 +15,7 @@
         "description": "Leverage trade on crypto, forex, and commodities",
         "tags": ["perpetual exchange", "forex"],
         "coins": [],
-        "networks": ["Arbitrum One"],
-        "opensource": false
+        "networks": ["Arbitrum One"]
     },
     {
         "name": "GMX",
@@ -26,16 +24,14 @@
         "description": "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet",
         "tags": ["perpetual exchange"],
         "coins": ["BTC", "AVAX", "ETH", "LINK", "UNI"],
-        "networks": ["Arbitrum One"],
-        "opensource": false
+        "networks": ["Arbitrum One"]
     },
     {
         "name": "UnstoppableSwap",
         "type": "software",
         "website": "https://unstoppableswap.net/",
         "description": "Exchange Bitcoin for Monero using Atomic Swaps through UnstoppableSwap's open-source desktop software. No registration required. No KYC, no middleman and completely anonymous over the Tor network. Be freed from the tyranny of centralized exchanges!",
-        "tags": ["atomic swaps"],
-        "opensource": true,
+        "tags": ["atomic swaps", "open source"],
         "coins": ["BTC", "XMR"],
         "networks": ["BitCoin", "Monero"],
         "sourceUrl": "https://github.com/UnstoppableSwap/unstoppableswap-gui"
