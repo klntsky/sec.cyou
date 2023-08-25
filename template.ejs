@@ -10,11 +10,11 @@
     <div id="description">
       This is a catalogue of <a target="_blank" href="https://en.wikipedia.org/wiki/Decentralized_finance">DeFi</a> platforms that facilitate permissionless and <a target="_blank" href="https://en.wikipedia.org/wiki/Know_your_customer">KYC-free</a> trading.
     </div>
-
+    <div id="bg"></div>
     <div id="container">
     <% for (let e of list) { %>
       <div class="item">
-        <a href="<%= e.website %>" target="_blank"><span class="item-name"><%= e.name %></span></a>
+        <a href="<%= e.website %>" target="_blank"><span class="item-name"><%= e.name %><img src="./link.svg" class="link-icon"></span></a>
         <div class="item-description"><%= e.description %></div>
         <div class="item-tags">
         <% for (let tag of e.tags) { %>

@@ -18,7 +18,7 @@ jobs:
           npm install
           npm run build
           mkdir build
-          cp index.html style.css sec.svg build/
+          cp index.html style.css sec.svg link.svg build/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
