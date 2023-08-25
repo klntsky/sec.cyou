@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #111;
+    background-image: url('./sec.svg');
+    background-size: 200px;
+    background-position: bottom 10px right 20px;
+    background-repeat:   no-repeat;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    color: #CCC;
+    font-family: sans;
+    /* background: radial-gradient(circle, #333 0%, #222 100%, rgba(0,212,255,1) 100%); */
+    background-attachment: fixed;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #DDD;
+}
+
+a:visited {
+    color: white;
+}
+
+#description {
+    padding: 40px;
+}
+
+.outer {
+    max-width: 900px;
+    display: flex-column;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: auto;
+    align-content: start;
+}
+
+#container:after {
+    display: block;
+    content: "";
+    margin: 10px;
+    flex: 999 999 auto;
+}
+
+.item {
+    max-width: 340px;
+    flex: 0 0 auto;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #444;
+    border-radius: 15px;
+    background-color: #444;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.item:hover {
+    background-color: #555;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.item-description {
+    font-size: 80%;
+}
+
+.item-tag {
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 60%;
+    text-transform: uppercase;
+    color: #222;
+    cursor: pointer;
+}
+
+.opensource, .closedsource {
+    padding: 4px 6px;
+    border-radius: 0px 0px 0px 8px;
+    font-size: 40%;
+    text-transform: uppercase;
+    color: #222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.opensource {
+    background-color: #7C7;
+}
+.closedsource {
+    background-color: #C77;
+}
