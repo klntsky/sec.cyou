@@ -4,20 +4,30 @@ html {
 
 body {
     background-color: #111;
-    background-image: url('./sec.svg');
-    background-size: 200px;
-    background-position: bottom 10px right 20px;
     background-repeat:   no-repeat;
     height: 100%;
     margin: 0;
-    background-repeat: no-repeat;
     color: #CCC;
     font-family: sans;
-    /* background: radial-gradient(circle, #333 0%, #222 100%, rgba(0,212,255,1) 100%); */
+    background: radial-gradient(circle, #444 0%, #222 100%, rgba(0,212,255,1) 100%);
     background-attachment: fixed;
     width:100%;
     display: flex;
     justify-content: center;
+}
+
+#bg {
+    background-image: url('./sec.svg');
+    background-size: 400px;
+    background-position: bottom -18px right 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-repeat: no-repeat;
 }
 
 a {
@@ -61,7 +71,7 @@ a:visited {
     position: relative;
     border: 1px solid #444;
     border-radius: 15px;
-    background-color: #444;
+    background-color: rgba(100, 100, 100, 0.8);
     padding: 20px;
     padding-bottom: 40px;
 }
@@ -73,10 +83,14 @@ a:visited {
 .item-name {
     font-weight: bold;
     font-size: 125%;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .item-description {
     font-size: 80%;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .item-tag {
@@ -86,22 +100,19 @@ a:visited {
     text-transform: uppercase;
     color: #222;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.opensource, .closedsource {
-    padding: 4px 6px;
-    border-radius: 0px 0px 0px 8px;
-    font-size: 40%;
-    text-transform: uppercase;
-    color: #222;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.link-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin-left: 10px;
 }
 
-.opensource {
-    background-color: #7C7;
-}
-.closedsource {
-    background-color: #C77;
+@media only screen and (hover: none) and (pointer: coarse) {
+    #bg {
+        background-size: 200px;
+        background-position: bottom 0px right 0px;
+    }
 }
