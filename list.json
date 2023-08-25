@@ -55,7 +55,7 @@
         "maxLeverage": "10",
         "tags": ["perpetual futures"],
         "coins": ["TODO"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -66,7 +66,7 @@
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
         "coins": ["TODO"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -88,7 +88,7 @@
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
         "coins": ["TODO"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -99,7 +99,7 @@
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH", "XRP", "ATOM", "DOGE"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -110,7 +110,7 @@
         "maxLeverage": "100",
         "tags": ["Perpetual Exchange"],
         "coins": ["TODO"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -121,7 +121,7 @@
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
         "coins": ["TODO"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -132,18 +132,18 @@
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH", "SOL", "SRM"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
         "name": "Margin DDEX",
         "type": "Perpetual Exchange",
         "website": "https://ddex.io/",
-        "description": "Hybrid paradigm with off-chain matching and on-chain settlement",
+        "description": "Decentralized margin trading. Trade Ethereum and Bitcoin with up to 5x leverage. Lend to earn interest.",
         "maxLeverage": "5",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH"],
-        "networks": [""],
+        "networks": [],
         "opensource": false
     },
     {
@@ -153,8 +153,8 @@
         "description": "Low-risk liquidity pools, most liquidity AMMs, permissionless trading",
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
@@ -164,8 +164,8 @@
         "description": "Synthetix is a derivatives liquidity protocol providing the backbone for derivatives trading in DeFi",
         "maxLeverage": "25",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
@@ -175,8 +175,8 @@
         "description": "Fulcrom is a decentralized perpetual exchange on Cronos for crypto leverage trading with minimal fees and price impact, and staking with real yield",
         "maxLeverage": "5",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
@@ -186,8 +186,8 @@
         "description": "Trade, Earn & Borrow. All in One DEX. Turbo-charged trading engine to outperform the competition. Trade on Vertex and earn $VRTX",
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
@@ -197,19 +197,19 @@
         "description": "ZKX is a Trustless, Borderless DAO. Our mission is to democratize access to global yields through our offerings to anyone, anywhere.",
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
-        "name": "Fxdx exchange",
+        "name": "fxdx exchange",
         "type": "Perpetual Exchange",
         "website": "https://fxdx.exchange/",
-        "description": "FXDX provides solution to all these problems as we have low transaction fees, non-custodial platform, opportunity to maximize gains by leverage of up to 30x to 50x",
+        "description": "Maximize Your Trading Profits in Cryptocurrency Futures with No Trading Fees, and Robust Oracle Pricing for a Legendary Trading Experience",
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": ["Optimism"],
         "opensource": false
     },
     {
@@ -219,8 +219,8 @@
         "description": "Non-custodial Prime Brokerage protocol. Primex enables leveraged spot trading on your favorite DEXs, all backed by lenders.Launch.",
         "maxLeverage": "4.4",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
@@ -230,8 +230,8 @@
         "description": "Synfutures trade freely in derivatives market whenever and however you want. Trusted by world-renowned investors and institutions.",
         "maxLeverage": "10",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [""],
+        "coins": [],
+        "networks": [],
         "opensource": false
     },
     {
@@ -241,7 +241,7 @@
         "description": "Mycelium Perpetual Swaps, which live on Ethereum layer-2 Arbitrum, provide exposure to “blue chip” cryptos",
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
+        "coins": [],
         "networks": ["Arbitrum"],
         "opensource": false
     }
