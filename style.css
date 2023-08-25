@@ -7,7 +7,7 @@ body {
     background-repeat:   no-repeat;
     height: 100%;
     margin: 0;
-    color: #CCC;
+    color: #EEE;
     font-family: sans;
     background: radial-gradient(circle, #444 0%, #222 100%, rgba(0,212,255,1) 100%);
     background-attachment: fixed;
@@ -41,6 +41,8 @@ a:visited {
 #description {
     padding-bottom: 40px;
     padding-top: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .outer {
@@ -114,13 +116,20 @@ a:visited {
 
 #edit-link {
     text-decoration: none;
-    font-weight: 60%;
+    font-weight: bold;
     font-family: Helvetica;
+    text-shadow: #000 0px 1px 3px;
+    padding: 6px;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
     #bg {
         background-size: 200px;
         background-position: bottom 0px right 0px;
+    }
+
+    #description {
+        font-size: 18px;
+        text-align: center;
     }
 }
