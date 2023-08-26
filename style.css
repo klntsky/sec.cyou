@@ -157,6 +157,10 @@ a:visited {
         font-size: 18px;
         text-align: center;
     }
+
+    #github {
+        display: none;
+    }
 }
 
 #github {
