@@ -4,7 +4,7 @@
         "type": "perpetual futures",
         "website": "https://vela.exchange",
         "description": "Trade with up to 250x leverage across crypto, forex, metals and more",
-        "tags": ["perpetual exchange"],
+        "tags": ["perpetual exchange", "forex"],
         "chains": ["Arbitrum One"],
         "coins": []
     },
@@ -91,7 +91,7 @@
         "opensource": false
     },
     {
-        "name": "Apex Pro",
+        "name": "Apex",
         "type": "Perpetual Exchange",
         "website": "https://www.apex.exchange/",
         "description": "Self-custody of funds, StarkEx integration, forced fund retrieval, STARK proofs, fully non-KYC, community-dedicated space under development",
@@ -120,7 +120,7 @@
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "chains": [],
+        "chains": ["Arbitrum One", "Binance Smart Chain"],
         "opensource": false
     },
     {
@@ -131,18 +131,18 @@
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH", "SOL", "SRM"],
-        "chains": [],
+        "chains": ["Solana"],
         "opensource": false
     },
     {
-        "name": "Margin DDEX",
+        "name": "DDEX",
         "type": "Perpetual Exchange",
         "website": "https://ddex.io/",
         "description": "Decentralized margin trading. Trade Ethereum and Bitcoin with up to 5x leverage. Lend to earn interest.",
         "maxLeverage": "5",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH"],
-        "chains": [],
+        "chains": ["Optimism"],
         "opensource": false
     },
     {
@@ -153,29 +153,29 @@
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "chains": [],
+        "chains": ["Ethereum", "Arbitrum One", "Avalanche"],
         "opensource": false
     },
     {
         "name": "Synthetix",
         "type": "Perpetual Exchange",
         "website": "https://synthetix.io/",
-        "description": "Synthetix is a derivatives liquidity protocol providing the backbone for derivatives trading in DeFi",
+        "description": "Synthetix provides liquidity for permissionless derivatives like perpetual futures, options, parimutuel markets, and more across EVM chains. Powering the next generation of permissionless protocols.",
         "maxLeverage": "25",
-        "tags": ["Perpetual Exchange"],
+        "tags": ["Ecosystem"],
         "coins": [],
         "chains": [],
         "opensource": false
     },
     {
-        "name": "Fulcrum",
+        "name": "Fulcrom",
         "type": "Perpetual Exchange",
         "website": "https://fulcrom.finance/",
         "description": "Fulcrom is a decentralized perpetual exchange on Cronos for crypto leverage trading with minimal fees and price impact, and staking with real yield",
         "maxLeverage": "5",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "chains": [],
+        "chains": ["Cronos"],
         "opensource": false
     },
     {
@@ -186,18 +186,7 @@
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "chains": [],
-        "opensource": false
-    },
-    {
-        "name": "ZKX",
-        "type": "Perpetual Exchange",
-        "website": "https://zkx.fi/",
-        "description": "ZKX is a Trustless, Borderless DAO. Our mission is to democratize access to global yields through our offerings to anyone, anywhere.",
-        "maxLeverage": "20",
-        "tags": ["Perpetual Exchange"],
-        "coins": [],
-        "chains": [],
+        "chains": ["Arbitrum One"],
         "opensource": false
     },
     {
@@ -208,7 +197,7 @@
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "chains": ["Optimism"],
+        "chains": ["Optimism", "Base"],
         "opensource": false
     },
     {
@@ -217,7 +206,7 @@
         "website": "https://app.primex.finance/",
         "description": "Non-custodial Prime Brokerage protocol. Primex enables leveraged spot trading on your favorite DEXs, all backed by lenders.Launch.",
         "maxLeverage": "4.4",
-        "tags": ["Perpetual Exchange"],
+        "tags": ["Perpetual Exchange", "Testnet-Only"],
         "coins": [],
         "chains": [],
         "opensource": false
@@ -230,7 +219,7 @@
         "maxLeverage": "10",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "chains": [],
+        "chains": ["Polygon", "zkSync Era"],
         "opensource": false
     },
     {
