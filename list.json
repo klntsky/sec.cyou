@@ -5,7 +5,7 @@
         "website": "https://vela.exchange",
         "description": "Trade with up to 250x leverage across crypto, forex, metals and more",
         "tags": ["perpetual exchange"],
-        "networks": [],
+        "chains": ["Arbitrum One"],
         "coins": []
     },
     {
@@ -15,7 +15,7 @@
         "description": "Leverage trade on crypto, forex, and commodities",
         "tags": ["perpetual exchange", "forex"],
         "coins": [],
-        "networks": ["Arbitrum One"]
+        "chains": ["Arbitrum One", "Polygon"]
     },
     {
         "name": "GMX",
@@ -24,7 +24,7 @@
         "description": "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet",
         "tags": ["perpetual exchange"],
         "coins": ["BTC", "AVAX", "ETH", "LINK", "UNI"],
-        "networks": ["Arbitrum One"]
+        "chains": ["Arbitrum One"]
     },
     {
         "name": "UnstoppableSwap",
@@ -33,7 +33,7 @@
         "description": "Exchange Bitcoin for Monero using Atomic Swaps through UnstoppableSwap's open-source desktop software. No registration required. No KYC, no middleman and completely anonymous over the Tor network. Be freed from the tyranny of centralized exchanges!",
         "tags": ["atomic swaps", "open source"],
         "coins": ["BTC", "XMR"],
-        "networks": ["BitCoin", "Monero"],
+        "chains": ["Bitcoin", "Monero"],
         "sourceUrl": "https://github.com/UnstoppableSwap/unstoppableswap-gui"
     },
     {
@@ -43,9 +43,8 @@
         "description": "Trade Perpetual Contracts with low fees, deep liquidity, and up to 20× more Buying Power",
         "maxLeverage": "20",
         "tags": ["perpetual exchange"],
-        "coins": ["TODO"],
-        "networks": ["starknet"],
-        "opensource": false
+        "coins": [],
+        "chains": ["Ethereum"]
     },
     {
         "name": "Perpetual Protocol",
@@ -54,19 +53,19 @@
         "description": "Perpetual Protocol is a decentralized blockchain protocol designed to facilitate the trading of derivatives known as perpetual contracts.",
         "maxLeverage": "10",
         "tags": ["perpetual futures"],
-        "coins": ["TODO"],
-        "networks": [],
+        "coins": [],
+        "chains": ["Optimism"],
         "opensource": false
     },
     {
         "name": "Metavault Trade",
         "type": "Perpetual Exchange",
         "website": "https://metavault.trade/",
-        "description": "Decentralized spot & perpetual exchange. Trade top cryptocurrencies with up to 50x leverage directly from your private wallet.",
+        "description": "Decentralized spot & perpetual exchange. Trade top cryptocurrencies with up to 50x leverage directly from your private wallet",
         "maxLeverage": "30",
-        "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [],
+        "tags": ["Perpetual Exchange", "Binary Options"],
+        "coins": [],
+        "chains": ["Polygon"],
         "opensource": false
     },
     {
@@ -76,8 +75,8 @@
         "description": "MUX dynamically routes positions to suited underlying trading protocols based on market, position size and user preferences.",
         "maxLeverage": "100",
         "tags": ["Perpetual Exchange", "aggregator"],
-        "coins": ["TODO"],
-        "networks": ["Arbitrum", "Binance Smart Chain", "Avalanche", "Optimism", "Fantom"],
+        "coins": [],
+        "chains": ["Arbitrum One", "Binance Smart Chain", "Avalanche", "Optimism", "Fantom"],
         "opensource": false
     },
     {
@@ -86,9 +85,9 @@
         "website": "https://kwenta.eth.limo/",
         "description": "Gain exposure to a variety of assets with up to 50x leverage and deep liquidity.",
         "maxLeverage": "50",
-        "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [],
+        "tags": ["Perpetual Exchange", "Synthetic Assets"],
+        "coins": [],
+        "chains": ["Optimism"],
         "opensource": false
     },
     {
@@ -99,7 +98,7 @@
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH", "XRP", "ATOM", "DOGE"],
-        "networks": [],
+        "chains": ["Ethereum", "Binance Smart Chain", "Polygon", "Arbitrum One", "Avalanche", "Optimism"],
         "opensource": false
     },
     {
@@ -109,8 +108,8 @@
         "description": "Trade crypto perpetuals with up to 500x leverage, low fees, and the lowest slippage on the market",
         "maxLeverage": "100",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [],
+        "coins": [],
+        "chains": ["Binance Smart Chain"],
         "opensource": false
     },
     {
@@ -120,8 +119,8 @@
         "description": "Omnichain Liquidity Marketplace with Functional Risk Management",
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
-        "coins": ["TODO"],
-        "networks": [],
+        "coins": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -132,7 +131,7 @@
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH", "SOL", "SRM"],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -143,7 +142,7 @@
         "maxLeverage": "5",
         "tags": ["Perpetual Exchange"],
         "coins": ["BTC", "ETH"],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -154,7 +153,7 @@
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -165,7 +164,7 @@
         "maxLeverage": "25",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -176,7 +175,7 @@
         "maxLeverage": "5",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -187,7 +186,7 @@
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -198,7 +197,7 @@
         "maxLeverage": "20",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -209,7 +208,7 @@
         "maxLeverage": "50",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": ["Optimism"],
+        "chains": ["Optimism"],
         "opensource": false
     },
     {
@@ -220,7 +219,7 @@
         "maxLeverage": "4.4",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -231,7 +230,7 @@
         "maxLeverage": "10",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": [],
+        "chains": [],
         "opensource": false
     },
     {
@@ -242,7 +241,7 @@
         "maxLeverage": "30",
         "tags": ["Perpetual Exchange"],
         "coins": [],
-        "networks": ["Arbitrum"],
+        "chains": ["Arbitrum One"],
         "opensource": false
     }
 ]

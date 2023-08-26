@@ -15,11 +15,20 @@
     <div id="container">
     <% for (let e of list) { %>
       <div class="item">
-        <a href="<%= e.website %>" target="_blank"><span class="item-name"><%= e.name %><img src="./link.svg" class="link-icon"></span></a>
+        <a href="<%= e.website %>" target="_blank">
+          <span class="item-name"><%= e.name %><img src="./link.svg" class="link-icon"></span>
+        </a>
+        <% if (e.chains.length) { %>
+          <span class="item-chains">
+          <% for (let chain of e.chains) { %>
+            <span class="item-chain-logo" title="<%= chain %>" style="background-image:url('logos/<%= chain %>.svg')"></span>
+          <% } %>
+          </span>
+        <% } %>
         <div class="item-description"><%= e.description %></div>
         <div class="item-tags">
         <% for (let tag of e.tags) { %>
-          <span class="item-tag" style="background-color: <%= colorHash(tag) %>;"><%= tag _%> </span>
+          <span class="item-tag" style="background-color: <%= colorHash(tag.toLowerCase()) %>;"><%= tag _%> </span>
         <% } %>
         </div>
       </div>
