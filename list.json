@@ -52,7 +52,7 @@
         "website": "https://app.perp.com/",
         "description": "Perpetual Protocol is a decentralized blockchain protocol designed to facilitate the trading of derivatives known as perpetual contracts.",
         "maxLeverage": "10",
-        "tags": ["perpetual futures"],
+        "tags": ["perpetual exchange"],
         "coins": [],
         "chains": ["Optimism"],
         "opensource": false
