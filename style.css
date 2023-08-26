@@ -2,10 +2,6 @@ html {
     height: 100%;
 }
 
-a {
-    text-decoration: none;
-}
-
 a:hover {
     color: white;
 }
@@ -96,6 +92,10 @@ a:visited {
     font-weight: bold;
     font-size: 125%;
     display: inline-block;
+}
+
+.item-link {
+    text-decoration: none;
 }
 
 .item-description {

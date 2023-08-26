@@ -15,7 +15,7 @@
     <div id="container">
     <% for (let e of list) { %>
       <div class="item">
-        <a href="<%= e.website %>" target="_blank">
+        <a class="item-link" href="<%= e.website %>" target="_blank">
           <span class="item-name"><%= e.name %><img src="./link.svg" class="link-icon"></span>
         </a>
         <% if (e.chains.length) { %>
