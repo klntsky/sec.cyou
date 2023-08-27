@@ -9,18 +9,20 @@ function unfilterTags () {
     filtersEl.style.display = 'none';
 }
 
-Object.entries(window.tagColors).forEach(([tag, color]) => {
-    // filter out particular ecosystems
-    if (tag != "ecosystem" && tag.search('ecosystem') !== -1) return;
+Object.entries(window.tagColors)
+    .sort()
+    .forEach(([tag, color]) => {
+        // filter out particular ecosystems
+        if (tag != "ecosystem" && tag.search('ecosystem') !== -1) return;
 
-    const tagEl = document.createElement('span');
-    tagEl.className = 'item-tag';
-    tagEl.textContent = tag;
-    tagEl.style.backgroundColor = color;
-    tagEl.onClick = () => filterTags(tag);
-    document.getElementById('tags').appendChild(tagEl);
-    document.getElementById('tags').appendChild(document.createTextNode(' '));
-});
+        const tagEl = document.createElement('span');
+        tagEl.className = 'item-tag';
+        tagEl.textContent = tag;
+        tagEl.style.backgroundColor = color;
+        tagEl.onClick = () => filterTags(tag);
+        document.getElementById('tags').appendChild(tagEl);
+        document.getElementById('tags').appendChild(document.createTextNode(' '));
+    });
 
 unfilterEl.addEventListener('click', unfilterTags);
 
