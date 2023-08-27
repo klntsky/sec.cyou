@@ -1,4 +1,4 @@
-# [SEC](https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission), see you
+# [SEC](https://en.wikipedia.org/wiki/U.S._Securities_and_Exchange_Commission), see you!
 
 This repo is a catalogue of [DeFi](https://en.wikipedia.org/wiki/Web3) platforms that facilitate permissionless and [KYC-free](https://en.wikipedia.org/wiki/Know_your_customer) trading.
 

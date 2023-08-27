@@ -1,54 +1,56 @@
 [
     {
         "name": "Vela Exchange",
-        "type": "perpetual futures",
         "website": "https://vela.exchange",
         "description": "Trade with up to 250x leverage across crypto, forex, metals and more",
         "tags": ["perpetual exchange", "forex"],
         "chains": ["Arbitrum One"],
-        "coins": []
+        "coins": [],
+        "docs": "https://docs.vela.exchange/vela-knowledge-base/exchange/platform-overview",
+        "twitter": "https://twitter.com/vela_exchange",
+        "discord": "https://discord.com/invite/velaexchange"
     },
     {
         "name": "gTrade",
-        "type": "perpetual exchange",
         "website": "https://gains.trade/",
         "description": "Leverage trade on crypto, forex, and commodities",
         "tags": ["perpetual exchange", "forex"],
         "coins": [],
-        "chains": ["Arbitrum One", "Polygon"]
+        "chains": ["Arbitrum One", "Polygon"],
+        "docs": "https://gains-network.gitbook.io/"
     },
     {
         "name": "GMX",
-        "type": "perpetual exchange",
         "website": "https://gmx.io/",
         "description": "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet",
         "tags": ["perpetual exchange"],
         "coins": ["BTC", "AVAX", "ETH", "LINK", "UNI"],
-        "chains": ["Arbitrum One"]
+        "chains": ["Arbitrum One"],
+        "docs": "https://docs.gmx.io/",
+        "github": "https://github.com/gmx-io"
     },
     {
         "name": "UnstoppableSwap",
-        "type": "software",
         "website": "https://unstoppableswap.net/",
         "description": "Exchange Bitcoin for Monero using Atomic Swaps through UnstoppableSwap's open-source desktop software. No registration required. No KYC, no middleman and completely anonymous over the Tor network. Be freed from the tyranny of centralized exchanges!",
-        "tags": ["atomic swaps", "open source"],
+        "tags": ["swaps", "atomic swaps", "open source"],
         "coins": ["BTC", "XMR"],
         "chains": ["Bitcoin", "Monero"],
-        "sourceUrl": "https://github.com/UnstoppableSwap/unstoppableswap-gui"
+        "sourceUrl": "https://github.com/UnstoppableSwap/unstoppableswap-gui",
+        "docs": "https://github.com/UnstoppableSwap/unstoppableswap-gui/tree/main/docs"
     },
     {
         "name": "dYdX",
-        "type": "perpetual exchange",
         "website": "https://dydx.exchange/",
         "description": "Trade Perpetual Contracts with low fees, deep liquidity, and up to 20× more Buying Power",
         "maxLeverage": "20",
         "tags": ["perpetual exchange"],
         "coins": [],
-        "chains": ["Ethereum"]
+        "chains": ["Ethereum"],
+        "docs": "https://v4-teacher.vercel.app/"
     },
     {
         "name": "Perpetual Protocol",
-        "type": "perpetual futures",
         "website": "https://app.perp.com/",
         "description": "Perpetual Protocol is a decentralized blockchain protocol designed to facilitate the trading of derivatives known as perpetual contracts.",
         "maxLeverage": "10",
@@ -59,18 +61,16 @@
     },
     {
         "name": "Metavault Trade",
-        "type": "Perpetual Exchange",
         "website": "https://metavault.trade/",
         "description": "Decentralized spot & perpetual exchange. Trade top cryptocurrencies with up to 50x leverage directly from your private wallet",
         "maxLeverage": "30",
-        "tags": ["Perpetual Exchange", "Binary Options"],
+        "tags": ["Perpetual Exchange", "binary options"],
         "coins": [],
         "chains": ["Polygon"],
         "opensource": false
     },
     {
         "name": "MUX",
-        "type": "Perpetual Exchange",
         "website": "https://mux.network/",
         "description": "MUX dynamically routes positions to suited underlying trading protocols based on market, position size and user preferences.",
         "maxLeverage": "100",
@@ -81,18 +81,16 @@
     },
     {
         "name": "Kwenta",
-        "type": "Perpetual Exchange",
         "website": "https://kwenta.eth.limo/",
         "description": "Gain exposure to a variety of assets with up to 50x leverage and deep liquidity.",
         "maxLeverage": "50",
-        "tags": ["Perpetual Exchange", "Synthetic Assets"],
+        "tags": ["Perpetual Exchange", "Synthetic Assets", "synthetix ecosystem"],
         "coins": [],
         "chains": ["Optimism"],
         "opensource": false
     },
     {
         "name": "Apex",
-        "type": "Perpetual Exchange",
         "website": "https://www.apex.exchange/",
         "description": "Self-custody of funds, StarkEx integration, forced fund retrieval, STARK proofs, fully non-KYC, community-dedicated space under development",
         "maxLeverage": "30",
@@ -103,7 +101,6 @@
     },
     {
         "name": "ApolloX",
-        "type": "Perpetual Exchange",
         "website": "https://www.apollox.finance/",
         "description": "Trade crypto perpetuals with up to 500x leverage, low fees, and the lowest slippage on the market",
         "maxLeverage": "100",
@@ -114,7 +111,6 @@
     },
     {
         "name": "Level Finance",
-        "type": "Perpetual Exchange",
         "website": "https://level.finance/",
         "description": "Omnichain Liquidity Marketplace with Functional Risk Management",
         "maxLeverage": "50",
@@ -125,7 +121,6 @@
     },
     {
         "name": "Mango Markets",
-        "type": "Perpetual Exchange",
         "website": "https://mango.markets/",
         "description": "Solana and Serum blockchain-powered platform, all-in-one trading platform for spot markets, derivatives assets, lending and borrowing",
         "maxLeverage": "20",
@@ -136,7 +131,6 @@
     },
     {
         "name": "DDEX",
-        "type": "Perpetual Exchange",
         "website": "https://ddex.io/",
         "description": "Decentralized margin trading. Trade Ethereum and Bitcoin with up to 5x leverage. Lend to earn interest.",
         "maxLeverage": "5",
@@ -147,7 +141,6 @@
     },
     {
         "name": "Futureswap",
-        "type": "Perpetual Exchange",
         "website": "https://www.futureswap.com/",
         "description": "Low-risk liquidity pools, most liquidity AMMs, permissionless trading",
         "maxLeverage": "30",
@@ -157,19 +150,16 @@
         "opensource": false
     },
     {
-        "name": "Synthetix",
-        "type": "Perpetual Exchange",
+        "name": "Synthetix Ecosystem",
         "website": "https://synthetix.io/",
         "description": "Synthetix provides liquidity for permissionless derivatives like perpetual futures, options, parimutuel markets, and more across EVM chains. Powering the next generation of permissionless protocols.",
-        "maxLeverage": "25",
-        "tags": ["Ecosystem"],
+        "tags": ["ecosystem", "synthetix ecosystem"],
         "coins": [],
         "chains": [],
         "opensource": false
     },
     {
         "name": "Fulcrom",
-        "type": "Perpetual Exchange",
         "website": "https://fulcrom.finance/",
         "description": "Fulcrom is a decentralized perpetual exchange on Cronos for crypto leverage trading with minimal fees and price impact, and staking with real yield",
         "maxLeverage": "5",
@@ -180,7 +170,6 @@
     },
     {
         "name": "Vertex Protocol",
-        "type": "Perpetual Exchange",
         "website": "https://vertexprotocol.com/",
         "description": "Trade, Earn & Borrow. All in One DEX. Turbo-charged trading engine to outperform the competition. Trade on Vertex and earn $VRTX",
         "maxLeverage": "20",
@@ -191,7 +180,6 @@
     },
     {
         "name": "fxdx exchange",
-        "type": "Perpetual Exchange",
         "website": "https://fxdx.exchange/",
         "description": "Maximize Your Trading Profits in Cryptocurrency Futures with No Trading Fees, and Robust Oracle Pricing for a Legendary Trading Experience",
         "maxLeverage": "50",
@@ -202,7 +190,6 @@
     },
     {
         "name": "Primex Finance",
-        "type": "Perpetual Exchange",
         "website": "https://app.primex.finance/",
         "description": "Non-custodial Prime Brokerage protocol. Primex enables leveraged spot trading on your favorite DEXs, all backed by lenders.Launch.",
         "maxLeverage": "4.4",
@@ -213,7 +200,6 @@
     },
     {
         "name": "SynFutures",
-        "type": "Perpetual Futures",
         "website": "https://trade.synfutures.com/",
         "description": "Synfutures trade freely in derivatives market whenever and however you want. Trusted by world-renowned investors and institutions.",
         "maxLeverage": "10",
@@ -224,7 +210,6 @@
     },
     {
         "name": "Mycelium",
-        "type": "Perpetual Exchange",
         "website": "https://mycelium.xyz/",
         "description": "Mycelium Perpetual Swaps, which live on Ethereum layer-2 Arbitrum, provide exposure to “blue chip” cryptos",
         "maxLeverage": "30",
@@ -232,5 +217,65 @@
         "coins": [],
         "chains": ["Arbitrum One"],
         "opensource": false
+    },
+    {
+        "name": "Polynomial",
+        "website": "https://trade.polynomial.fi/",
+        "description": "Polynomial trade is a decentralised derivative trading exchange powered by the Synthetix protocol on Optimism. The exchange allows leverage trading up to 50x with a faster and smoother UI and lower fees than other derivative exchanges.",
+        "maxLeverage": 50,
+        "tags": ["Perpetual Exchange", "synthetix ecosystem"],
+        "coins": [],
+        "chains": ["Optimism"],
+        "opensource": false,
+        "docs": "https://docs.trade.polynomial.fi/",
+        "twitter": "https://twitter.com/polynomialfi",
+        "discord": "https://discord.gg/polynomial",
+        "mirror": "https://mirror.xyz/0xf3897707d8Fa5dC27b2A6575319e409a464eB8D8",
+        "roadmap": "https://feedback.polynomial.fi/roadmap/",
+        "markets": "https://trade.polynomial.fi/markets"
+    },
+    {
+        "name": "Polymarket",
+        "website": "https://polymarket.com/",
+        "description": "The worlds largest decentralized prediction market",
+        "tags": ["binary options", "uma ecosystem"],
+        "chains": ["Polygon"],
+        "docs": "https://docs.polymarket.com/",
+        "status": "https://status.polymarket.com/",
+        "twitter": "https://twitter.com/Polymarket",
+        "discord": "https://discord.gg/Polymarket",
+        "medium": "https://medium.com/@polymarket"
+    },
+    {
+        "name": "UMA",
+        "website": "https://uma.xyz",
+        "description": "UMA' s optimistic oracle (OO) can record any verifiable truth or data onto a blockchain",
+        "tags": ["oracle", "ecosystem", "uma ecosystem"],
+        "chains": ["Polygon"],
+        "docs": "https://docs.uma.xyz/"
+    },
+    {
+        "name": "Across",
+        "website": "https://across.to/",
+        "description": "Across is a cross-chain bridge for L2s and rollups secured by UMA's optimistic oracle",
+        "tags": ["bridge", "uma ecosystem"],
+        "chains": ["Ethereum", "Optimism", "Arbitrum One", "zkSync Era"],
+        "docs": "https://docs.uma.xyz/"
+    },
+    {
+        "name": "1inch",
+        "website": "https://1inch.io/",
+        "description": "One-stop access to decentralized finance",
+        "tags": ["swaps", "aggregator", "automated market maker", "order book", "address screening"],
+        "chains": ["Ethereum", "Arbitrum One", "Binance Smart Chain", "Polygon", "Optimism", "Avalanche", "Fantom", "Base"],
+        "docs": "https://docs.1inch.io/"
+    },
+    {
+        "name": "Uniswap",
+        "website": "https://uniswap.org/",
+        "description": "Swap, earn, and build on the leading decentralized crypto trading protocol",
+        "tags": ["swaps", "automated market maker"],
+        "chains": ["Ethereum", "Arbitrum One", "Optimism", "Polygon", "Base", "Binance Smart Chain", "Avalanche", "Celo"],
+        "docs": "https://docs.uniswap.org/"
     }
 ]

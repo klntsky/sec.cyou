@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width">
     <title>SEC, see you! - DeFi catalogue</title>
     <link rel="stylesheet" href="./style.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an open catalogue of DeFi platforms that facilitate permissionless trading">
   </head>
   <body>
+    <script>
+      window.tagColors = {};
+    </script>
     <div class="outer">
     <div id="description">
       This is a catalogue of <a target="_blank" href="https://en.wikipedia.org/wiki/Decentralized_finance">DeFi</a> platforms that facilitate permissionless trading
+    </div>
+    <div id="tags">
+    </div>
+    <div id="filters">
+      Filtering by tag: <span id="active-filter"></span> &nbsp;<span id="clear-filter">[reset]</span>
     </div>
     <div id="bg"></div>
     <div id="container">
@@ -29,6 +39,9 @@
         <div class="item-tags">
         <% for (let tag of e.tags) { %>
           <span class="item-tag" style="background-color: <%= colorHash(tag.toLowerCase()) %>;"><%= tag _%> </span>
+          <script>
+            window.tagColors["<%= tag.toLowerCase() %>"] = "<%= colorHash(tag.toLowerCase()); %>"
+          </script>
         <% } %>
         </div>
       </div>
@@ -42,5 +55,6 @@
     <br>
     </div>
     <a id="github" href="https://github.com/klntsky/sec.cyou/"><img decoding="async" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy" data-recalc-dims="1"></a>
+    <script src="main.js"></script>
   </body>
 </html>
