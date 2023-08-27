@@ -33,7 +33,7 @@
         "name": "UnstoppableSwap",
         "website": "https://unstoppableswap.net/",
         "description": "Exchange Bitcoin for Monero using Atomic Swaps through UnstoppableSwap's open-source desktop software. No registration required. No KYC, no middleman and completely anonymous over the Tor network. Be freed from the tyranny of centralized exchanges!",
-        "tags": ["swaps", "atomic swaps", "open source"],
+        "tags": ["swaps", "atomic swaps", "cross-chain swaps", "open source"],
         "coins": ["BTC", "XMR"],
         "chains": ["Bitcoin", "Monero"],
         "sourceUrl": "https://github.com/UnstoppableSwap/unstoppableswap-gui",
@@ -312,7 +312,7 @@
         "name": "Balancer",
         "website": "https://balancer.finance/",
         "description": "A decentralized automated market maker (AMM) protocol built on Ethereum that represents a flexible building block for programmable liquidity.",
-        "tags": ["automated market maker", "ecosystem"],
+        "tags": ["swaps", "automated market maker", "ecosystem"],
         "chains": ["Ethereum", "Gnosis", "Polygon", "Polygon zkEVM", "Base", "Arbitrum One", "Avalanche"],
         "docs": "https://docs.balancer.fi/"
     },
@@ -324,5 +324,12 @@
         "chains": ["Ethereum", "Arbitrum One", "Base", "Polygon", "Optimism", "Binance Smart Chain", "Gnosis", "Avalanche", "Fantom", "Arbitrum Nova", "Harmony", "Kava", "Celo", "Moonbeam", "Polygon zkEVM"],
         "docs": "https://www.sushi.com/academy",
         "github": "https://github.com/sushiswap"
+    },
+    {
+        "name": "Atomic Swap",
+        "website": "https://atomic-swap.io/",
+        "description": "Trade any number of tokens/NFTs for any other number of tokens/NFTs in a single transaction.",
+        "tags": ["swaps", "atomic swaps"],
+        "chains": ["Cardano"]
     }
 ]
