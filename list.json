@@ -274,8 +274,55 @@
         "name": "Uniswap",
         "website": "https://uniswap.org/",
         "description": "Swap, earn, and build on the leading decentralized crypto trading protocol",
-        "tags": ["swaps", "automated market maker"],
+        "tags": ["swaps", "automated market maker", "open source"],
         "chains": ["Ethereum", "Arbitrum One", "Optimism", "Polygon", "Base", "Binance Smart Chain", "Avalanche", "Celo"],
-        "docs": "https://docs.uniswap.org/"
+        "docs": "https://docs.uniswap.org/",
+        "github": "https://github.com/Uniswap"
+    },
+    {
+        "name": "Curve DAO",
+        "website": "https://www.curve.fi/",
+        "description": "Curve is an exchange liquidity pool on Ethereum (like Uniswap) designed for extremely efficient stablecoin trading",
+        "tags": ["swaps", "automated market maker"],
+        "chains": ["Ethereum", "Arbitrum One", "Aurora", "Avalanche", "Fantom", "Harmony", "Optimism", "Polygon", "xDai", "Moonbeam", "Kava", "Celo"],
+        "docs": "https://curve.readthedocs.io/",
+        "github": "https://github.com/curvefi"
+    },
+    {
+        "name": "PancakeSwap",
+        "website": "https://pancakeswap.finance/",
+        "description": "Trade, earn, and win crypto on the most popular decentralized platform in the galaxy",
+        "tags": ["swaps", "automated market maker", "bridge", "order book", "open source"],
+        "chains": ["Binance Smart Chain", "Ethereum", "Polygon zkEVM", "zkSync Era", "Arbitrum One", "Aptos"],
+        "docs": "https://docs.pancakeswap.finance/",
+        "github": "https://github.com/pancakeswap/",
+        "twitter": "https://twitter.com/pancakeswap",
+        "discord": "https://discord.gg/pancakeswap"
+    },
+    {
+        "name": "Osmosis",
+        "website": "https://osmosis.zone/",
+        "description": "Swap, earn, and build on the leading decentralized Cosmos exchange",
+        "tags": ["swaps", "automated market maker", "open source", "ecosystem", "osmosis ecosystem"],
+        "chains": ["Osmosis"],
+        "docs": "https://docs.osmosis.zone/",
+        "github": "https://github.com/osmosis-labs/osmosis"
+    },
+    {
+        "name": "Balancer",
+        "website": "https://balancer.finance/",
+        "description": "A decentralized automated market maker (AMM) protocol built on Ethereum that represents a flexible building block for programmable liquidity.",
+        "tags": ["automated market maker", "ecosystem"],
+        "chains": ["Ethereum", "Gnosis", "Polygon", "Polygon zkEVM", "Base", "Arbitrum One", "Avalanche"],
+        "docs": "https://docs.balancer.fi/"
+    },
+    {
+        "name": "Sushi",
+        "website": "https://sushi.com/",
+        "description": "Buy and Sell Instantly on Sushi. Whenever. No registration needed. Over 400 tokens to trade at your fingertips.",
+        "tags": ["swaps", "automated market maker", "cross-chain swaps"],
+        "chains": ["Ethereum", "Arbitrum One", "Base", "Polygon", "Optimism", "Binance Smart Chain", "Gnosis", "Avalanche", "Fantom", "Arbitrum Nova", "Harmony", "Kava", "Celo", "Moonbeam", "Polygon zkEVM"],
+        "docs": "https://www.sushi.com/academy",
+        "github": "https://github.com/sushiswap"
     }
 ]

@@ -2,7 +2,12 @@ import * as fs from 'fs';
 import ejs from 'ejs';
 import ColorHash from 'color-hash';
 
-const list = JSON.parse(fs.readFileSync('./list.json'));
+const shuffle = raw =>
+      raw.map(value => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+
+const list = shuffle(JSON.parse(fs.readFileSync('./list.json')));
 const template = fs.readFileSync('./template.ejs').toString();
 const colorHash = new ColorHash.default({ lightness: [0.8, 0.9] });
 
