@@ -51,6 +51,7 @@ a:visited {
 
 .outer {
     max-width: 900px;
+    width: 900px;
     display: flex-column;
     justify-content: center;
 }
@@ -105,7 +106,7 @@ a:visited {
     display: inline-block;
 }
 
-.item-tag {
+.item-tag, #active-filter {
     padding: 4px 6px;
     border-radius: 3px;
     font-size: 60%;
@@ -132,6 +133,7 @@ a:visited {
 }
 
 .item-chains {
+    vertical-align: bottom;
     margin-left: 10px;
 }
 
@@ -145,6 +147,21 @@ a:visited {
     display: inline-block;
     height: 100%;
     vertical-align: top;
+}
+
+#filters {
+    display: none;
+    padding: 20px;
+}
+
+#tags {
+    padding: 0 20px 20px 20px;
+}
+
+#clear-filter {
+    color: #FCC;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
