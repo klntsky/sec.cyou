@@ -14,7 +14,7 @@
     </script>
     <div class="outer">
     <div id="description">
-      This is a catalogue of <a target="_blank" href="https://en.wikipedia.org/wiki/Decentralized_finance">DeFi</a> platforms that facilitate permissionless trading
+      This is a catalogue of <a target="_blank" href="https://en.wikipedia.org/wiki/Decentralized_finance">DeFi</a> platforms that facilitate <a target="_blank" href="https://coinmarketcap.com/alexandria/glossary/permissionless">permissionless</a> trading
     </div>
     <div id="tags">
     </div>
@@ -24,7 +24,8 @@
     <div id="bg"></div>
     <div id="container">
     <% for (let e of list) { %>
-      <div class="item">
+    <div class="item">
+      <div class="item-contents">
         <a class="item-link" href="<%= e.website %>" target="_blank">
           <span class="item-name"><%= e.name %><img src="./link.svg" class="link-icon"></span>
         </a>
@@ -45,6 +46,7 @@
         <% } %>
         </div>
       </div>
+    </div>
     <% } %>
     </div>
     <br>
