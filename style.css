@@ -21,7 +21,7 @@ body {
 }
 
 #bg {
-    background-image: url('./sec-min.svg');
+    background-image: url('./sec.png');
     background-size: 400px;
     background-position: bottom -18px right 0px;
     position: fixed;
