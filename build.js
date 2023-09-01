@@ -11,6 +11,14 @@ const list = shuffle(JSON.parse(fs.readFileSync('./list.json')));
 const template = fs.readFileSync('./template.ejs').toString();
 const colorHash = new ColorHash.default({ lightness: [0.8, 0.9] });
 
+console.log('entries total:', list.length);
+
+const domains = new Set(list.map(e => e.website.split('/')[2]));
+
+if (list.length != domains.size) {
+    throw "Duplicate entries";
+}
+
 for (let entry of list) {
     for (let chain of entry.chains) {
         if (!fs.existsSync('./logos/' + chain + '.svg'))  {
