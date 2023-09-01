@@ -1,0 +1,162 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The name of the exchange."
+            },
+            "website": {
+                "type": "string",
+                "description": "The website URL of the exchange.",
+                "minLength": 1,
+                "format": "uri"
+            },
+            "description": {
+                "type": "string",
+                "minLength": 1,
+                "description": "A description of the exchange."
+            },
+            "tags": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "perpetual exchange",
+                        "forex",
+                        "swaps",
+                        "atomic swaps",
+                        "cross-chain swaps",
+                        "open source",
+                        "binary options",
+                        "aggregator",
+                        "ecosystem",
+                        "oracle",
+                        "derivatives",
+                        "bridge",
+                        "automated market maker",
+                        "order book",
+                        "address screening",
+                        "osmosis ecosystem",
+                        "testnet-only",
+                        "Synthetic Assets",
+                        "synthetix ecosystem",
+                        "leveraged yield farming",
+                        "uma ecosystem"
+                    ]
+                },
+                "description": "Tags categorizing the exchange."
+            },
+            "coins": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "description": "List of supported coins."
+            },
+            "chains": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "Arbitrum One",
+                        "Polygon",
+                        "Bitcoin",
+                        "Bitcoin Cash",
+                        "Monero",
+                        "Ethereum",
+                        "Optimism",
+                        "Binance Smart Chain",
+                        "Avalanche",
+                        "Fantom",
+                        "Solana",
+                        "Cronos",
+                        "Base",
+                        "zkSync Era",
+                        "Celo",
+                        "Aurora",
+                        "Harmony",
+                        "xDai",
+                        "Moonbeam",
+                        "Kava",
+                        "Polygon zkEVM",
+                        "Aptos",
+                        "Osmosis",
+                        "Gnosis",
+                        "Arbitrum Nova",
+                        "Cardano",
+                        "Stella"
+                    ]
+                },
+                "description": "List of supported blockchain chains."
+            },
+            "docs": {
+                "type": "string",
+                "description": "URL to the documentation.",
+                "format": "uri"
+            },
+            "twitter": {
+                "type": "string",
+                "description": "URL to the Twitter profile.",
+                "format": "uri"
+            },
+            "discord": {
+                "type": "string",
+                "description": "URL to the Discord server.",
+                "format": "uri"
+            },
+            "github": {
+                "type": "string",
+                "description": "URL to the GitHub repository.",
+                "format": "uri"
+            },
+            "telegram": {
+                "type": "string",
+                "description": "Telegram link.",
+                "format": "uri"
+            },
+            "medium": {
+                "type": "string",
+                "description": "Medium URL.",
+                "format": "uri"
+            },
+            "mirror": {
+                "type": "string",
+                "description": "Mirror.xyz of the platform.",
+                "format": "uri"
+            },
+            "roadmap": {
+                "type": "string",
+                "description": "Mirror.xyz of the platform.",
+                "format": "uri"
+            },
+            "roadmap": {
+                "type": "string",
+                "description": "Mirror.xyz of the platform.",
+                "format": "uri"
+            },
+            "sourceUrl": {
+                "type": "string",
+                "description": "URL to the source code.",
+                "format": "uri"
+            },
+            "maxLeverage": {
+                "type": "number",
+                "description": "Maximum leverage provided by the exchange."
+            },
+            "leverageInfo": {
+                "type": "string",
+                "description": "Maximum leverage provided by the exchange."
+            },
+            "opensource": {
+                "type": "boolean",
+                "description": "Indicates whether the exchange is open source."
+            }
+        },
+        "required": ["name", "website", "description", "tags", "chains"],
+        "additionalProperties": false
+    }
+}
