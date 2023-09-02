@@ -658,7 +658,7 @@
         "website": "https://www.drift.trade/#",
         "description": "On-Chain Perpetual & Spot Trading with Leverage",
         "tags": [
-            "leveraged yield farming"
+            "yield farming"
         ],
         "chains": [
             "Solana"
@@ -708,7 +708,7 @@
     {
         "name": "IPOR",
         "website": "https://www.ipor.io/",
-        "description": "Allows users to hedge their exposure by leveraging non-custodian on-chain interest rate swaps, fix interest rate or hedge exposure by leveraging non-custodial on-chain IPOR derivative instruments",
+        "description": "Fix your interest rate or hedge your exposure by leveraging non-custodial on-chain IPOR derivative instruments",
         "tags": [
             "derivatives"
         ],
@@ -725,7 +725,7 @@
     {
         "name": "Hyper Liquid",
         "website": "https://hyperliquid.xyz/",
-        "description": "An order book perpetual futures DEX. Hyperliquid does everything the best CEXs do, but on-chain.",
+        "description": "Hyperliquid is a decentralized perpetual exchange with best-in-class speed, liquidity, and price.",
         "tags": [
             "derivatives"
         ],

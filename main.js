@@ -4,7 +4,7 @@ var activeFilterEl = document.getElementById('active-filter');
 
 function unfilterTags () {
     [].forEach.call(document.getElementsByClassName('item'), elem => {
-        elem.style.display = 'block';
+        elem.style.display = '';
     });
     filtersEl.style.display = 'none';
 }
@@ -14,6 +14,7 @@ Object.entries(window.tagColors)
     .forEach(([tag, color]) => {
         // filter out particular ecosystems
         if (tag != "ecosystem" && tag.search('ecosystem') !== -1) return;
+        if (tag == 'address screening') return;
 
         const tagEl = document.createElement('span');
         tagEl.className = 'item-tag';
@@ -37,7 +38,7 @@ function filterTags(tagEl) {
             [].some.call(
                 elem.getElementsByClassName('item-tag'),
                 tag => tag.textContent.toLowerCase() == text.toLowerCase()
-            ) ? 'block' : 'none';
+            ) ? '' : 'none';
     });
 
 }
