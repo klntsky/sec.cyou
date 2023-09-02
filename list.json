@@ -171,7 +171,7 @@
     {
         "name": "Apex",
         "website": "https://www.apex.exchange/",
-        "description": "Self-custody of funds, StarkEx integration, forced fund retrieval, STARK proofs, fully non-KYC, community-dedicated space under development",
+        "description": "ApeX Pro is a non-custodial trading platform that delivers limitless cross-margined perpetual contracts to its metacommunity under a new social trading framework",
         "tags": [
             "perpetual exchange"
         ],
@@ -183,6 +183,7 @@
             "Avalanche",
             "Optimism"
         ],
+        "docs": "https://apex-pro.gitbook.io/apex-pro/",
         "twitter": "https://twitter.com/OfficialApeXdex",
         "telegram": "https://t.me/ApeXdex",
         "discord": "https://discord.com/invite/366Puqavwx",
@@ -337,9 +338,10 @@
     {
         "name": "SynFutures",
         "website": "https://trade.synfutures.com/",
-        "description": "Synfutures trade freely in derivatives market whenever and however you want. Trusted by world-renowned investors and institutions.",
+        "description": "Meet the next-generation derivatives platform designed for any blockchain",
         "tags": [
-            "perpetual exchange"
+            "perpetual exchange",
+            "oracle"
         ],
         "chains": [
             "Polygon",
@@ -355,7 +357,7 @@
     {
         "name": "Mycelium",
         "website": "https://mycelium.xyz/",
-        "description": " Trade leverage over the long-term",
+        "description": "Trade leverage over the long-term",
         "tags": [
             "perpetual exchange"
         ],
@@ -689,7 +691,7 @@
         "leverageInfo": "https://docs.stellaxyz.io/stella-doc/app-guide/open-a-position"
     },
     {
-        "name": "SwapBased Perp",
+        "name": "SwapBased",
         "website": "https://perps.swapbased.finance/",
         "description": "Trade main assets on Base Chain with no price impact, low fees & up-to 30x leverage",
         "tags": [
@@ -742,9 +744,10 @@
     {
         "name": "Nest Protocol",
         "website": "https://www.nestprotocol.org/",
-        "description": "decentralized contract exchanges, financial derivatives supermarkets, on-chain and off-chain risk hedging, the economic framework of Metaverse and GameFi, lottery, prop synthesis, and others.",
+        "description": "A Decentralized Martingale Network. Trading with smart contract. No market makers. No LPs.",
         "tags": [
-            "derivatives"
+            "derivatives",
+            "oracle"
         ],
         "chains": [
             "Ethereum",
@@ -851,7 +854,7 @@
     {
         "name": "Perennial",
         "website": "https://app.perennial.finance/trade",
-        "description": "decentralized derivatives protocol built to be a composable primitive that can scale to meet the needs of traders, liquidity providers, and developers",
+        "description": "Perennial is built from first principles as a powerful DeFi primitive that scales to meet the needs of traders, LPs, and developers",
         "tags": [
             "derivatives"
         ],
@@ -869,9 +872,10 @@
     {
         "name": "Ark Digital",
         "website": "https://app.aark.digital",
-        "description": "decentralized derivatives exchange, a Peer-to-Pool perpetuals DEX",
+        "description": "Leverage Everything Perpetual DEX",
         "tags": [
-            "derivatives"
+            "derivatives",
+            "leveraged yield farming"
         ],
         "chains": [
             "Arbitrum One"
@@ -886,7 +890,7 @@
     {
         "name": "Any Hedge",
         "website": "https://anyhedge.com/",
-        "description": "a Bitcoin Cash futures contract that aims to mitigate volatility through trading of risk in a peer-to-peer, non-custodial, blockchain enforced, fully collateralized way",
+        "description": "A Bitcoin Cash futures contract that aims to mitigate volatility through trading of risk in a peer-to-peer, non-custodial, blockchain enforced, fully collateralized way",
         "tags": [
             "derivatives",
             "open source"
@@ -897,7 +901,7 @@
         "docs": "https://anyhedge.com/whitepaper/introduction/",
         "twitter": "https://twitter.com/AnyHedge",
         "telegram": "https://t.me/AnyHedge",
-        "maxLeverage": 102
+        "maxLeverage": 5
     },
     {
         "name": "Bluefin",
