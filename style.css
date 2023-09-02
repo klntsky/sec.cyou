@@ -12,7 +12,7 @@ body {
     height: 100%;
     margin: 0;
     color: #EEE;
-    font-family: sans;
+    font-family: Verdana, sans-serif;
     background: radial-gradient(circle, #444 0%, #222 100%);
     background-attachment: fixed;
     width:100%;
@@ -142,9 +142,8 @@ a:visited {
     background-color: rgba(0,0,0,0.6);
     text-decoration: none;
     font-weight: bold;
-    font-family: Helvetica;
     text-shadow: #000 0px 1px 3px;
-    padding: 16px 16px 10px 16px;
+    padding: 16px;
 
 }
 
