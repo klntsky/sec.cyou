@@ -3,13 +3,11 @@ import fuzzysort from 'fuzzysort';
 import { Tag, ChainTag } from '../';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
 import { defaultFilterData } from './consts/defaultFilterData'
-import { useDebounceValue } from '../../hooks'
 
 import './style.css';
 
 export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilter }) => {
     const [filter, setFilter] = useState(filterData || defaultFilterData);
-    const debouncedFilter = useDebounceValue(filter);
 
     const onChangeFilter = (field, updatedValue) => {
         setFilter(prevFilter => {
@@ -48,10 +46,10 @@ export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilte
 
         onUpdate(filtered);
         onUpdateFilter(filter);
-    }, [debouncedFilter]);
+    }, [filter]);
 
     useEffect(() => {
-        if (!filterData) return;
+        if (!filterData || filter === filterData) return;
         setFilter(filterData);
     }, [filterData]);
 

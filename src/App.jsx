@@ -10,7 +10,7 @@ import list from './list.json';
 
 export const App = () => {
     const [filteredList, setFilteredList] = useState(list);
-    const [filterData, setFilterData] = useState(defaultFilterData);
+    const [filterData, setFilterData] = useState();
     const {colorsByTag, chainList, filterTags } = getTagsAndChains();
 
     const onUpdateFilter = (filteredList) => setFilteredList(filteredList);
