@@ -156,7 +156,7 @@
         "description": "Decentralized derivatives trading platform. Gain exposure to a variety of on-chain and real-world assets, and advanced functionality through the Kwenta Smart Margin Wallet.",
         "tags": [
             "perpetual exchange",
-            "Synthetic Assets",
+            "synthetic assets",
             "synthetix ecosystem"
         ],
         "chains": [
@@ -920,5 +920,190 @@
         "github": "https://github.com/fireflyprotocol",
         "maxLeverage": 20,
         "leverageInfo": "https://learn.bluefin.io/arbitrum/tutorials/perpetual-swaps"
+    },
+    {
+        "name": "Hakka Finance",
+        "website": "https://hakka.finance/",
+        "description": "Hakka Finance is a set of decentralized derivatives & original financial instruments, forming an all-inclusive ecosystem of tools that allow users to pursue financial sovereignty.",
+        "tags": ["perpetual exchange", "ecosystem", "swaps", "derivatives"],
+        "chains": ["Ethereum", "Binance Smart Chain"],
+        "docs": "https://hakkafinance.gitbook.io/hakka-wiki/",
+        "twitter": "https://twitter.com/hakkafinance",
+        "telegram": "https://t.me/hakkafinance",
+        "discord": "https://discord.com/invite/cU4D2a8",
+        "github": "https://github.com/hakkafinance",
+        "maxLeverage": 50
+    },
+    {
+        "name": "Levana",
+        "website": "https://www.levana.finance/",
+        "description": "Trade native tokens with 30x leverage and low fees. Levana is the only platform with zero insolvency risk",
+        "tags": ["swaps", "perpetual exchange", "derivatives"],
+        "chains": ["Osmosis", "Sei"],
+        "docs": "https://docs.levana.finance/",
+        "twitter": "https://twitter.com/Levana_protocol",
+        "discord": "https://discord.com/invite/RqTCqks8yk",
+        "github": "https://github.com/Levana-Protocol",
+        "maxLeverage": 30,
+        "leverageInfo": "https://docs.levana.finance/high-level-overview?highlight=leverage#flipped-leverage"
+    },
+    {
+        "name": "Jarvis Network",
+        "website": "https://jarvis.network/",
+        "description": "Stablecoins and Forex for Decentralized Finance.",
+        "tags": ["forex", "synthetic assets"],
+        "chains": ["Polygon", "Optimism", "Binance Smart Chain", "Avalanche", "Arbitrum One", "Gnosis"],
+        "docs": "https://jarvis.network/about",
+        "twitter": "https://twitter.com/jarvis_network",
+        "discord": "https://discord.com/invite/2GbKwERXDc",
+        "github": "https://github.com/jarvis-network"
+    },
+    {
+        "name": "KTX Finance",
+        "website": "https://www.ktx.finance/",
+        "description": "Trade and earn cryptocurrencies with lowest fees, depthless liquidity, and leverage. Generate yield in a bull, bear, or sideways market.",
+        "tags": ["perpetual exchange", "derivatives"],
+        "chains": ["Binance Smart Chain"],
+        "docs": "https://docs.ktx.finance/",
+        "twitter": "https://twitter.com/KTX_finance",
+        "telegram": "https://t.me/KTX_officials",
+        "discord": "https://discord.com/invite/tAFgvRNxTQ",
+        "maxLeverage": 50,
+        "leverageInfo": "https://docs.ktx.finance/getting-started/traders/trader-tutorials#opening-a-position"
+    },
+    {
+        "name": "Horizon Protocol",
+        "website": "https://horizonprotocol.com/",
+        "description": "Horizon Protocol facilitates the creation and trading of synthetic assets (zAssets) that represent the real economy.",
+        "tags": ["forex", "perpetual exchange", "synthetic assets", "derivatives"],
+        "chains": ["Binance Smart Chain"],
+        "docs": "https://academy.horizonprotocol.com/",
+        "twitter": "https://twitter.com/horizonprotocol",
+        "telegram": "https://t.me/HorizonProtocol",
+        "discord": "https://discord.com/invite/SaDKvkbQF2",
+        "github": "https://github.com/Horizon-Protocol",
+        "leverageInfo": "https://academy.horizonprotocol.com/horizon-protocol/synthetic-assets-zassets#what-can-i-do-with-synthetic-assets"
+    },
+    {
+        "name": "Unidex",
+        "website": "https://www.unidex.exchange/",
+        "description": "Swap rates & fills in DeFi",
+        "tags": ["aggregator", "swaps", "perpetual exchange", "derivatives"],
+        "chains": ["zkSync Era", "Arbitrum One", "Optimism", "Fantom", "Base", "Binance Smart Chain"],
+        "docs": "https://docs.unidex.exchange/unidex/",
+        "twitter": "https://twitter.com/UniDexFinance",
+        "telegram": "https://t.me/unidexfinance",
+        "discord": "https://discord.com/invite/unidex",
+        "maxLeverage": 500,
+        "leverageInfo": "https://www.unidex.exchange/leverage"
+    },
+    {
+        "name": "DerivaDEX",
+        "website": "https://derivadex.com/",
+        "description": "A community-governed derivatives exchange",
+        "tags": ["perpetual exchange", "derivatives"],
+        "chains": ["Ethereum"],
+        "twitter": "https://twitter.com/DDX_Official",
+        "discord": "https://discord.com/invite/uR2Kt4Q"
+    },
+    {
+        "name": "GoodEntry",
+        "website": "https://goodentry.io/",
+        "description": "Protected Perps native to Arbitrum",
+        "tags": ["perpetual exchange", "derivatives"],
+        "chains": ["Arbitrum One"],
+        "docs": "https://gitbook.goodentry.io/",
+        "twitter": "https://twitter.com/goodentrylabs",
+        "discord": "https://discord.com/invite/goodentry",
+        "github": "https://github.com/GoodEntry-io/GoodEntryMarkets",
+        "maxLeverage": 10,
+        "leverageInfo": "https://gitbook.goodentry.io/protected-perps#step-3-adjust-your-position-size"
+    }, {
+        "name": "Uniwhale",
+        "website": "https://uniwhale.co/",
+        "description": "Trade BTC, ETH, and more with leverage from your wallet.",
+        "tags": ["perpetual exchange", "derivatives"],
+        "chains": ["Binance Smart Chain"],
+        "docs": "https://docs.uniwhale.co/",
+        "twitter": "https://twitter.com/UniwhaleEx",
+        "telegram": "https://t.me/UniwhaleEx",
+        "discord": "https://discord.com/invite/AAW3FpBHRU",
+        "github": "https://github.com/uniwhale-io",
+        "maxLeverage": 200,
+        "leverageInfo": "https://docs.uniwhale.co/trading#trade-up-to-200x"
+    },
+    {
+        "name": "UrDEX Finance",
+        "website": "https://urdex.finance/",
+        "description": "Liquidity with a Decentralized Perpetual Exchange and Risk Management Solutions.",
+        "tags": ["ecosystem", "oracle", "perpetual exchange", "derivatives"],
+        "chains": ["Arbitrum One"],
+        "docs": "https://docs.urdex.finance/overview/introduction",
+        "twitter": "https://twitter.com/UrDEX_Finance",
+        "telegram": "https://t.me/urdexfinance",
+        "github": "https://github.com/Urdex-finance",
+        "maxLeverage": 10,
+        "leverageInfo": "https://docs.urdex.finance/overview/revenue-model"
+    },
+    {
+        "name": "RubiDEX",
+        "website": "https://rubydex.com/en",
+        "description": "Perpetual DEX for Forex, Stocks, Crypto, and NFTs",
+        "tags": ["perpetual exchange", "forex", "derivatives"],
+        "chains": ["Arbitrum One", "Binance Smart Chain", "zkSync Era", "Ethereum"],
+        "docs": "https://academy.rubydex.com/en",
+        "twitter": "https://twitter.com/Ruby_Dex",
+        "telegram": "https://t.me/RubyDex",
+        "discord": "https://discord.com/invite/eB5YWFtvFs"
+
+    }, {
+        "name": "Spin",
+        "website": "https://perp.spin.fi/",
+        "description": "Decentralized trading and investments platform built on NEAR Protocol. Spin offers a wide range of products.",
+        "tags": ["swaps", "perpetual exchange", "derivatives"],
+        "chains": ["NEAR"],
+        "docs": "https://docs.spin.fi/",
+        "twitter": "https://twitter.com/spin_fi",
+        "telegram": "https://t.me/spin_fi_chat",
+        "discord": "https://discord.com/invite/spinfi",
+        "github": "https://t.me/spin_fi_chat",
+        "maxLeverage": 10,
+        "leverageInfo": "https://docs.spin.fi/products/perpetual-futures#how-to-trade-perpetual-futures-on-spin"
+    }, {
+        "name": "Synthswap",
+        "website": "https://www.synthswap.io/home",
+        "description": "Open Long and Short Positions with Leverage. Alternatively you can use Synthswap Futures for Swapping with 0% Price Impact. Both, Market and Limit Orders are possible.",
+        "tags": ["perpetual exchange", "swaps", "derivatives", "yield farming", "bridge"],
+        "chains": ["Base"],
+        "docs": "https://docs.synthswap.io/",
+        "twitter": "https://twitter.com/synthswapio",
+        "telegram": "https://t.me/SynthswapOfficial",
+        "discord": "https://discord.com/invite/synthswap",
+        "maxLeverage": 50,
+        "leverageInfo": "https://docs.synthswap.io/key-features/futures-trading#futures-trading-on-synthswap"
+    }, {
+        "name": "Float",
+        "website": "https://float.capital/",
+        "description": "Tokenized long and short assets",
+        "tags": ["perpetual exchange", "derivatives"],
+        "chains": ["Polygon", "The Graph"],
+        "docs": "https://docs.float.capital",
+        "twitter": "https://twitter.com/float_shipping",
+        "discord": "https://discord.com/invite/float-capital",
+        "github": "https://github.com/float-capital"
+    },
+    {
+        "name": "Pinnako",
+        "website": "https://app.pinnako.io/#/",
+        "description": " decentralized perpetual trading platform, offering a diverse array of markets bolstered by substantial liquidity.",
+        "tags": ["forex", "perpetual exchange", "derivatives", "bridge"],
+        "chains": ["zkSync Era",
+                   "Mantle"
+                  ],
+        "docs": "https://docs.pinnako.io/pinnako_io/overview/introduction",
+        "discord": "https://discord.com/invite/pinnakodex",
+        "github": "https://github.com/pinnakoex/pinnakoes_contract",
+        "maxLeverage": 1000,
+        "leverageInfo": "https://docs.pinnako.io/pinnako_io/trading/leverage#pinnako-leverage-trading-a-structured-guide"
     }
 ]

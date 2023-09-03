@@ -42,7 +42,7 @@
                         "address screening",
                         "osmosis ecosystem",
                         "testnet-only",
-                        "Synthetic Assets",
+                        "synthetic assets",
                         "synthetix ecosystem",
                         "leveraged yield farming",
                         "yield farming",
@@ -89,7 +89,11 @@
                         "Gnosis",
                         "Arbitrum Nova",
                         "Cardano",
-                        "Stella"
+                        "Stella",
+                        "The Graph",
+                        "Sei",
+                        "NEAR",
+                        "Mantle"
                     ]
                 },
                 "description": "List of supported blockchain chains."
