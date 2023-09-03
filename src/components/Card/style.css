@@ -64,7 +64,5 @@
 }
 
 .card-chains {
-    vertical-align: bottom;
-    margin-left: 10px;
-    float: right;
+    justify-content: right;
 }
