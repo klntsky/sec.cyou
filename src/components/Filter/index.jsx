@@ -3,11 +3,13 @@ import fuzzysort from 'fuzzysort';
 import { Tag, ChainTag } from '../';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
 import { defaultFilterData } from './consts/defaultFilterData'
+import { useDebounceValue } from '../../hooks'
 
 import './style.css';
 
 export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilter }) => {
     const [filter, setFilter] = useState(filterData || defaultFilterData);
+    const debouncedFilter = useDebounceValue(filter);
 
     const onChangeFilter = (field, updatedValue) => {
         setFilter(prevFilter => {
@@ -21,9 +23,7 @@ export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilte
         });
     }
 
-    const onReset = () => {
-        setFilter(defaultFilterData);
-    }
+    const onReset = () => setFilter(defaultFilterData)
 
     useEffect(() => {
         let filtered = data;
@@ -31,10 +31,10 @@ export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilte
         const filteredTags = Object.keys(filter.tags);
         if (filteredTags.length)
             filtered = filtered.filter(platform => filteredTags.some(filteredTag => {
-            if (filteredTag === 'ecosystem')
-                return platform.tags.some(tag => tag.search('ecosystem') !== -1);
-            return platform.tags.includes(filteredTag);
-        }));
+                if (filteredTag === 'ecosystem')
+                    return platform.tags.some(tag => tag.search('ecosystem') !== -1);
+                return platform.tags.includes(filteredTag);
+            }));
 
         const filteredChains = Object.keys(filter.chains);
         if (filteredChains.length)
@@ -48,7 +48,7 @@ export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilte
 
         onUpdate(filtered);
         onUpdateFilter(filter);
-    }, [filter]);
+    }, [debouncedFilter]);
 
     useEffect(() => {
         if (!filterData) return;
