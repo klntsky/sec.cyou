@@ -1,0 +1,19 @@
+#filter {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: inherit;
+}
+
+.search-tags > .tags,
+.search-chains > .chains {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+#clear-filter {
+    color: #FCC;
+    font-weight: bold;
+    cursor: pointer;
+}

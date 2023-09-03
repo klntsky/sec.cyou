@@ -21,7 +21,7 @@ body {
 }
 
 #bg {
-    background-image: url('./sec.png');
+    background-image: url('./assets/sec.svg');
     background-size: 400px;
     background-position: bottom -18px right 0px;
     position: fixed;
@@ -51,6 +51,10 @@ a:visited {
     padding-right: 6px;
 }
 
+.isBlackedOut {
+    opacity: 0.5;
+}
+
 .outer {
     width: 100%;
     max-width: 900px;
@@ -65,6 +69,7 @@ a:visited {
     justify-content: start;
     align-items: auto;
     align-content: stretch;
+    max-width: inherit;
 }
 
 #container:after {
@@ -74,68 +79,12 @@ a:visited {
     flex: 999 999 auto;
 }
 
-.item {
-    width: 100%;
-    max-width: 450px;
-    flex: 0 0 auto;
-    margin: 0;
-    position: relative;
-    padding: 0;
-    display: flex;
+#filter {
+    margin-bottom: 16px;
 }
 
-.item-contents {
-    align-content: stretch;
-    border: 1px solid #444;
-    border-radius: 15px;
-    background-color: rgba(100, 100, 100, 0.8);
-    padding: 20px;
-    margin: 5px;
-    height: auto;
-    width: 100%;
-}
-
-.item-contents:hover {
-    background-color: #555;
-    border: 1px solid #999;
-}
-
-.item-name {
-    font-weight: bold;
-    font-size: 125%;
-    display: inline-block;
-}
-
-.item-link {
-    text-decoration: none;
-}
-
-.item-description {
-    font-size: 80%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    display: block;
-    clear: both;
-}
-
-.item-tag, #active-filter {
-    margin-bottom: 4px;
-    display: inline-block;
-    padding: 4px 6px;
-    border-radius: 3px;
-    font-size: 60%;
-    text-transform: uppercase;
-    color: #222;
-    cursor: pointer;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.link-icon {
-    width: 0.8em;
-    height: 0.8em;
-    display: inline-block;
-    margin-left: 10px;
+.center {
+    text-align: center;
 }
 
 #edit-link {
@@ -143,42 +92,7 @@ a:visited {
     text-decoration: none;
     font-weight: bold;
     text-shadow: #000 0px 1px 3px;
-    padding: 16px;
-
-}
-
-.item-chains {
-    vertical-align: bottom;
-    margin-left: 10px;
-    float: right;
-}
-
-.item-chain-logo {
-    height: 24px !important;
-    width: 24px !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0;
-    display: inline-block;
-    height: 100%;
-    vertical-align: text-top;
-}
-
-#filters {
-    display: none;
-    padding: 20px;
-}
-
-#tags {
-    text-align: center;
-    padding: 0 20px 20px 20px;
-}
-
-#clear-filter {
-    color: #FCC;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 16px 16px 10px 16px;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
