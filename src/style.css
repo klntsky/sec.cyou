@@ -1,9 +1,7 @@
 html {
     height: 100%;
-}
-
-a:hover {
-    color: white;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
 }
 
 body {
@@ -11,7 +9,7 @@ body {
     background-repeat:   no-repeat;
     height: 100%;
     margin: 0;
-    color: #EEE;
+    color: #EFEFEF;
     font-family: Verdana, sans-serif;
     background: radial-gradient(circle, #444 0%, #222 100%);
     background-attachment: fixed;
@@ -20,8 +18,12 @@ body {
     justify-content: center;
 }
 
+a:hover {
+    color: white;
+}
+
 #bg {
-    background-image: url('./assets/sec.svg');
+    background-image: url('./assets/sec.png');
     background-size: 400px;
     background-position: bottom -18px right 0px;
     position: fixed;
@@ -35,17 +37,17 @@ body {
 }
 
 a {
-    color: #DDD;
+    color: white;
 }
 
 a:visited {
-    color: white;
+    color: #DDD;
 }
 
 #description {
     text-align: center;
     font-size: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 40px;
     padding-left: 6px;
     padding-right: 6px;
@@ -69,7 +71,6 @@ a:visited {
     justify-content: start;
     align-items: auto;
     align-content: stretch;
-    max-width: inherit;
 }
 
 #container:after {
@@ -92,7 +93,30 @@ a:visited {
     text-decoration: none;
     font-weight: bold;
     text-shadow: #000 0px 1px 3px;
-    padding: 16px 16px 10px 16px;
+    padding: 16px;
+}
+
+#filter-input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#filter-input {
+    font-size: 30px;
+    background-color: #222;
+    border-radius: 8px;
+    color: #EEE;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tags, .chains {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
@@ -109,10 +133,34 @@ a:visited {
     #github {
         display: none;
     }
+
+    html, body {
+        max-width: 100%;
+    }
+
+    .chain-tag__name {
+        display: none !important;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation:landscape) {
+    .card {
+        max-width: unset !important;
+    }
+    .chain-tag__name {
+        display: inline-block !important;
+    }
+
 }
 
 #github {
     position: fixed;
     top: 0;
     right: 0;
+}
+
+/* TODO: show again */
+
+#clear-filter {
+    display: none;
 }

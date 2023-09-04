@@ -57,11 +57,6 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
     if (!filter) return null;
 
     return <div id="filter">
-        <input
-            placeholder="Search by Name or Description"
-            value={filter.text}
-            onChange={event => onChangeFilter('text', event.target.value)}
-        />
         <div className="search-tags">
             <div className="tags">
                 {Object.keys(tags).map(tagName =>
@@ -91,5 +86,13 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
             ? <span id="clear-filter" onClick={onReset}>[reset]</span>
             : null
         }
+        <div id="filter-input-container">
+          <input
+            id="filter-input"
+            placeholder="Search Platforms..."
+            value={filter.text}
+            onChange={event => onChangeFilter('text', event.target.value)}
+          />
+        </div>
     </div>
 }
