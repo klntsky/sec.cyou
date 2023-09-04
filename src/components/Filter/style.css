@@ -18,3 +18,7 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+#filter-input {
+    border-color: #555;
+}
