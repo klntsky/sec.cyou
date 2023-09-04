@@ -1,4 +1,4 @@
-import { useTagColors } from '../../hooks';
+import { useTagColors } from '../../contexts/tagColors';
 import { classNameByObject } from '../../helpers/classNameByObject';
 
 import './style.css';
