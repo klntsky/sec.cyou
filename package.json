@@ -9,7 +9,7 @@
     "dev": "vite serve",
     "build:static": "vite build --emptyOutDir --outDir ../dist/static",
     "build:server": "vite build --ssr entry-server.jsx --outDir ../dist/server --emptyOutDir",
-    "build:assets": "rm -rf build && mkdir -p build && cp -r dist/static/* build/ && cp -r src/assets/* build/assets/",
+    "build:assets": "mkdir -p public && cp -r dist/static/* public/ && cp -r src/assets/* public/assets/",
     "build": "npm run build:static && npm run build:server && node build && npm run build:assets",
     "preview": "vite preview"
   },
