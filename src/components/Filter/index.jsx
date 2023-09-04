@@ -42,7 +42,7 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
             filtered = filtered.filter(platform => filteredChains.some(filteredChain => platform.chains.includes(filteredChain)))
 
         if (filter.text) {
-            const fuzzyResult = fuzzysort.go(filter.text, filtered, { keys: ['name', 'description'] });
+            const fuzzyResult = fuzzysort.go(filter.text, filtered, { keys: ['name', 'description', 'website'] });
             if (fuzzyResult)
                 filtered = fuzzyResult.map(fuzziedObj => fuzziedObj.obj)
         }
