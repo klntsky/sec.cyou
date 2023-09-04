@@ -1,11 +1,37 @@
 import { Tag, Chain } from '../';
+import { useFilter } from '../../contexts/filter'
+import { defaultFilterData } from '../Filter/consts/defaultFilterData'
 
 import './style.css';
 
 export const Card = ({ data, onClickTag, onClickChain }) => {
-    const Chains = () => data.chains.map(chain => <Chain name={chain} key={chain} onClick={() => onClickChain(chain)} />);
+    const [filter, setFilter] = useFilter();
 
-    const Tags = () => data.tags.map(tag => <Tag key={tag} onClick={() => onClickTag(tag)}>{tag}</Tag>)
+    const onClickCardFilter = (field, newValue) => {
+        setFilter(prevFilter => {
+            return {
+                ...defaultFilterData,
+                [field]: {
+                    [newValue]: true,
+                },
+            }
+        });
+    }
+
+    const Chains = () => data.chains.map(chain =>
+        <Chain
+            name={chain}
+            key={chain}
+            onClick={() => onClickCardFilter('chains', chain)}
+        />);
+
+    const Tags = () => data.tags.map(tag =>
+        <Tag
+            key={tag}
+            onClick={() => onClickCardFilter('tags', tag)}
+        >
+            {tag}
+        </Tag>)
 
     return <div className="card">
         <div className="card-contents">

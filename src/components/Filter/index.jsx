@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import fuzzysort from 'fuzzysort';
 import { Tag, ChainTag } from '../';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
 import { defaultFilterData } from './consts/defaultFilterData'
+import { useFilter } from '../../contexts/filter'
 
 import './style.css';
 
-export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilter }) => {
-    const [filter, setFilter] = useState(filterData || defaultFilterData);
+export const Filter = ({ data, tags, chains, onUpdate }) => {
+    const [filter, setFilter] = useFilter();
 
     const onChangeFilter = (field, updatedValue) => {
         setFilter(prevFilter => {
@@ -24,6 +25,8 @@ export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilte
     const onReset = () => setFilter(defaultFilterData)
 
     useEffect(() => {
+        if (!filter) return;
+
         let filtered = data;
 
         const filteredTags = Object.keys(filter.tags);
@@ -45,13 +48,13 @@ export const Filter = ({ data, filterData, tags, chains, onUpdate, onUpdateFilte
         }
 
         onUpdate(filtered);
-        onUpdateFilter(filter);
     }, [filter]);
 
     useEffect(() => {
-        if (!filterData || filter === filterData) return;
-        setFilter(filterData);
-    }, [filterData]);
+        setFilter(defaultFilterData);
+    }, [])
+
+    if (!filter) return null;
 
     return <div id="filter">
         <input

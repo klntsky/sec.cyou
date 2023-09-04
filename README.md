@@ -4,7 +4,7 @@ This repo is a catalogue of [DeFi](https://en.wikipedia.org/wiki/Web3) platforms
 
 The catalogue can be browsed live at [sec.cyou](https://sec.cyou) website.
 
-You can contribute to the list by making a pull request to [list.json](./list.json). A new entry must satisfy two requirements:
+You can contribute to the list by making a pull request to [src/list.json](./src/list.json). A new entry must satisfy two requirements:
 
 - be permissionless
 - be KYC-free
