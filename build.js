@@ -42,6 +42,12 @@ console.log('ℹ️  entries total:', list.length);
 const domains = new Set(list.map(e => e.website.split('/')[2]));
 
 if (list.length != domains.size) {
+    for (let item of list) {
+        if (!domains.has(item.website.split('/')[2])) {
+            console.error('duplicate item:', item);
+        }
+        domains.delete(item.website.split('/')[2]);
+    }
     throw "Duplicate entries";
 }
 
