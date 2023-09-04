@@ -1,0 +1,19 @@
+.chain-tag {
+    display: flex;
+    gap: 8px;
+    background-color: #f6f6f6;
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 60%;
+    text-transform: uppercase;
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chain-tag__name {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    align-self: center;
+}

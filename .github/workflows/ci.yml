@@ -1,0 +1,21 @@
+name: Run code checks
+
+on:
+  push:
+    branches: # all but master - for master we have pages flow
+      - '**'
+      - '!master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
