@@ -19,6 +19,13 @@
     width: 100%;
 }
 
+/* less transparent background for mobile */
+@media only screen and (hover: none) and (pointer: coarse) {
+    .card-contents {
+        background-color: rgba(100, 100, 100, 0.95);
+    }
+}
+
 .card-contents:hover {
     background-color: #555;
     border: 1px solid #999;
