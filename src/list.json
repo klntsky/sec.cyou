@@ -23,7 +23,8 @@
         "description": "Leverage trade on crypto, forex, and commodities",
         "tags": [
             "perpetual exchange",
-            "forex"
+            "forex",
+            "commodities"
         ],
         "chains": [
             "Arbitrum One",
@@ -156,7 +157,7 @@
         "description": "Decentralized derivatives trading platform. Gain exposure to a variety of on-chain and real-world assets, and advanced functionality through the Kwenta Smart Margin Wallet.",
         "tags": [
             "perpetual exchange",
-            "Synthetic Assets",
+            "synthetic assets",
             "synthetix ecosystem"
         ],
         "chains": [
@@ -245,7 +246,9 @@
         "description": "Provides liquidity for permissionless derivatives like perpetual futures, options, parimutuel markets, and more across EVM chains.",
         "tags": [
             "ecosystem",
-            "synthetix ecosystem"
+            "synthetix ecosystem",
+            "commodities"
+
         ],
         "chains": [
             "Ethereum"
@@ -944,7 +947,7 @@
         "name": "Horizon Protocol",
         "website": "https://horizonprotocol.com/",
         "description": "Horizon Protocol facilitates the creation and trading of synthetic assets (zAssets) that represent the real economy.",
-        "tags": ["forex", "perpetual exchange", "Synthetic Assets", "derivatives"],
+        "tags": ["forex", "perpetual exchange", "synthetic assets", "derivatives"],
         "chains": ["Binance Smart Chain"],
         "docs": "https://academy.horizonprotocol.com/",
         "twitter": "https://twitter.com/horizonprotocol",
@@ -1100,7 +1103,7 @@
         "name": "Lemma",
         "website": "https://defillama.com/protocol/lemma",
         "description": "DeFi protocol with two products: leveraged basis trading vault and USDL, a stablecoin that is fully decentralized. It also has a spot exchange that allows traders to swap spot assets using perpetual futures markets.",
-        "tags": ["swaps", "Synthetic Assets", "perpetual exchange", "derivatives"],
+        "tags": ["swaps", "synthetic assets", "perpetual exchange", "derivatives"],
         "chains": ["Optimism"],
         "docs": "https://docs.lemma.finance/",
         "twitter": "https://twitter.com/Lemma_Labs",
@@ -1148,7 +1151,7 @@
         "name": "Unlimited",
         "website": "https://unlimited.trade/",
         "description": "Trade your favorite cryptocurrencies synthetically with zero price impact, minimal slippage and leverage.",
-        "tags": ["Synthetic Assets", "perpetual exchange", "derivatives"],
+        "tags": ["synthetic assets", "perpetual exchange", "derivatives"],
         "chains": ["Arbitrum One"],
         "docs": "https://docs.unlimited.trade/",
         "twitter": "https://twitter.com/unlimited_defi",
@@ -1237,7 +1240,7 @@
         "name": "Tigris",
         "website": "https://tigris.trade/",
         "description": "Decentralized synthetic perp trading platform on Arbitrum and Polygon that allows you to trade crypto, forex, and commodities with up to 500x leverage directly from your wallet",
-        "tags": ["Synthetic Assets", "perpetual exchange", "forex", "commodities", "dao"],
+        "tags": ["synthetic assets", "perpetual exchange", "forex", "commodities", "dao"],
         "chains": ["Polygon", "Arbitrum One"],
         "docs": "https://docs.tigris.trade/tigris/quick-links",
         "twitter": "https://twitter.com/tigristrades",
