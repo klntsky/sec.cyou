@@ -1,6 +1,10 @@
 name: Run code checks
 
-on: push
+on:
+  push:
+    branches: # all but master - for master we have pages flow
+      - '**'
+      - '!master'
 
 jobs:
   build:

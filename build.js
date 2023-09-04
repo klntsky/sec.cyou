@@ -11,7 +11,14 @@ const shuffle = raw =>
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
 
-const list = shuffle(JSON.parse(fs.readFileSync('./src/list.json')));
+let list;
+
+try {
+    list = shuffle(JSON.parse(fs.readFileSync('./src/list.json')));
+} catch (e) {
+    console.error("./src/list.json is invalid: ", e);
+    process.exit(1);
+}
 
 // validate
 const schema = JSON.parse(
@@ -24,12 +31,13 @@ const valid = ajv.validate(schema, list);
 if (!valid) {
     const output = betterAjvErrors(schema, list, validate.errors, { format: 'cli', indent: 2});
     console.log(output);
+    console.log("❌ src/list.json is invalid according to the schema");
     process.exit(1);
 } else {
-    console.log("valid according to the schema");
+    console.log("✅ src/list.json is valid according to the schema");
 }
 
-console.log('entries total:', list.length);
+console.log('ℹ️  entries total:', list.length);
 
 const domains = new Set(list.map(e => e.website.split('/')[2]));
 
