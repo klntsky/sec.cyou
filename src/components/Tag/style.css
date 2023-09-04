@@ -8,3 +8,7 @@
     font-weight: bold;
     white-space: nowrap;
 }
+
+.tag-tooltip {
+    background-color: #222;
+}

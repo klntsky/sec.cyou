@@ -16,6 +16,7 @@
   "author": "sec.cyou",
   "license": "ISC",
   "dependencies": {
+    "@tippyjs/react": "^4.2.6",
     "@vitejs/plugin-react": "^4.0.4",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
