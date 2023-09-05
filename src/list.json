@@ -1053,16 +1053,6 @@
         "discord": "https://discord.com/invite/synthswap",
         "maxLeverage": 50,
         "leverageInfo": "https://docs.synthswap.io/key-features/futures-trading#futures-trading-on-synthswap"
-    }, {
-        "name": "Float",
-        "website": "https://float.capital/",
-        "description": "Tokenized long and short assets",
-        "tags": ["perpetual exchange", "derivatives"],
-        "chains": ["Polygon", "The Graph", "Gelato"],
-        "docs": "https://docs.float.capital",
-        "twitter": "https://twitter.com/float_shipping",
-        "discord": "https://discord.com/invite/float-capital",
-        "github": "https://github.com/float-capital"
     },
     {
         "name": "Pinnako",
@@ -1320,8 +1310,7 @@
         "twitter": "https://twitter.com/Flux_Exchange",
         "telegram": "https://t.me/FluxExchange_io",
         "discord": "https://discord.com/invite/SGvDkahrBU",
-        "maxLeverage": 100,
-        "leverageInfo": "https://docs.fluxexchange.io/documentation/trading#managing-positions"
+        "maxLeverage": 100
     },
     {
         "name": "Tethys",
@@ -1334,8 +1323,7 @@
         "telegram": "https://t.me/tethysswap",
         "discord": "https://discord.com/invite/bmz6AnJW5p",
         "github": "https://github.com/TethysFinance",
-        "maxLeverage": 50,
-        "leverageInfo": "https://docs.tethys.finance/?q=leverage"
+        "maxLeverage": 50
     },
     {
         "name": "MetalSwap",
@@ -1353,14 +1341,13 @@
         "name": "YFX",
         "website": "https://www.yfx.com/",
         "description": " decentralized perpetual exchange with leverage, high liquidity, low fees, and no slippage.",
-        "tags": ["bridge", "perpetual exchange", "derivatives"],
+        "tags": ["order book", "bridge", "perpetual exchange", "derivatives"],
         "chains": ["Arbitrum One"],
         "docs": "https://docs.yfx.com/",
         "twitter": "https://twitter.com/YFX_COM",
         "telegram": "https://t.me/YFX_COM",
         "discord": "https://discord.com/invite/SqBxPQXW2P",
-        "maxLeverage": 100,
-        "leverageInfo": "https://docs.yfx.com/v2/how-to-trade-on-yfx-v2#place-a-market-order"
+        "maxLeverage": 100
     },
     {
         "name": "Mad Mex",
@@ -1372,8 +1359,7 @@
         "twitter": "https://twitter.com/YFX_COM",
         "telegram": "https://t.me/YFX_COM",
         "discord": "https://discord.com/invite/SqBxPQXW2P",
-        "maxLeverage": 30,
-        "leverageInfo": "https://mmfinance.gitbook.io/madmex-spot-and-perps/trading#opening-a-position"
+        "maxLeverage": 30
     },
     {
         "name": "Satori",
@@ -1398,8 +1384,7 @@
         "telegram": "https://t.me/grizzlyficommunity",
         "discord": "https://discord.com/invite/grizzlyfi",
         "github": "https://github.com/grizzlyfi",
-        "maxLeverage": 50,
-        "leverageInfo": "https://docs.grizzly.fi/v/eng/product/grizzly-trade/perpetuals-and-spot-trading/what-is-spot-and-perp-trading#leveraged-instrument"
+        "maxLeverage": 50
     },
     {
         "name": "FutureSwap",
@@ -1417,7 +1402,7 @@
         "name": "Holdstation DeFutures",
         "website": "https://holdstation.exchange/",
         "description": "Lightning Trades, Real Yield with zk Tech! Trade diverse assets (crypto, forex, commodities, stocks) with 500x leverage. Manage seamlessly via intuitive Account Abstraction Holdstation Wallet on iOS and Android. Embrace the next Defi suite on zkSync ecosystem.",
-        "tags": ["yield farming", "bridge", "commodities", "bridge", "order book"],
+        "tags": ["forex", "yield farming", "bridge", "commodities", "bridge", "order book"],
         "chains": ["zkSync Era"],
         "docs": "https://holdstation.gitbook.io/holdstation-docs-en/product/holdstation-defutures",
         "twitter": "https://twitter.com/HoldstationW",
@@ -1425,6 +1410,144 @@
         "discord": "https://discord.com/invite/holdstation",
         "maxLeverage": 500,
         "leverageInfo": "https://docs.holdstation.com/holdstation-docs-en/product/holdstation-defutures/asset-class-and-leverage"
+    },
+    {
+        "name": "Morphex",
+        "website": "https://www.morphex.trade/",
+        "description": "Decentralized perpetual exchange, Trade BTC, ETH, and other top cryptocurrencies with leverage directly from your wallet",
+        "tags": ["swaps", "order book", "bridge", "derivatives", "perpetual exchange"],
+        "chains": ["Fantom", "Binance Smart Chain"],
+        "docs": "https://docs.morphex.trade/",
+        "twitter": "https://twitter.com/MorphexFTM",
+        "telegram": "https://t.me/MorphexFTM",
+        "discord": "https://discord.com/invite/TR7zzfT2ru",
+        "github": "https://github.com/morphex-labs",
+        "maxLeverage": 50,
+        "leverageInfo": "https://docs.morphex.trade/trading-guide#opening-a-position"
+    },
+    {
+        "name": "Aboard Exchange",
+        "website": "https://aboard.exchange/",
+        "description": "Order book perpetual DEX live on multi-chains",
+        "tags": ["order book", "derivatives", "perpetual exchange"],
+        "chains": ["Arbitrum One", "zkSync Era", "Avalanche"],
+        "docs": "https://docs.aboard.exchange/products/the-exchange",
+        "twitter": "https://twitter.com/AboardExchange",
+        "discord": "https://discord.com/invite/n7r73ehJtf",
+        "github": "https://github.com/Aboard-Exchange"
+    },
+    {
+        "name": "Onchain Trade",
+        "website": "https://onchain.trade/",
+        "description": "Onchain Trade(OT) is a DeFi protocol where people can provide liquidity, swap, borrow and trading perpetuals.",
+        "tags": ["derivatives", "perpetual exchange"],
+        "chains": ["zkSync Era", "Base"],
+        "docs": "https://onchaintrade.gitbook.io/ot/",
+        "twitter": "https://twitter.com/onchaintrade",
+        "discord": "https://discord.com/invite/zQ5rJkmxQ7",
+        "github": "https://github.com/onchaintrade",
+        "maxLeverage": 100,
+        "leverageInfo": "https://onchaintrade.gitbook.io/ot/perpetuals-trading"
+    },
+    {
+        "name": "Cap Finance",
+        "website": "https://www.cap.io/",
+        "description": "Decentralized Perps. Trade directly from your wallet. ",
+        "tags": ["derivatives", "perpetual exchange"],
+        "chains": ["Arbitrum One", "Base"],
+        "docs": "https://docs.cap.io/intro/whats-cap",
+        "twitter": "https://twitter.com/CapDotFinance",
+        "discord": "https://discord.com/invite/zkdr8vnujz",
+        "github": "https://github.com/capofficial",
+        "maxLeverage": 100,
+        "leverageInfo": "https://docs.cap.io/trade/orders/order-actions#select-leverage"
+    },
+    {
+        "name": "Voltz",
+        "website": "https://www.voltz.xyz/",
+        "description": "Voltz Protocol is a non-custodial Automated Market Maker for Interest Rate Swaps.",
+        "tags": ["automated market maker", "dao", "swaps", "derivatives"],
+        "chains": ["Arbitrum One", "Avalanche", "Ethereum"],
+        "docs": "https://www.voltz.xyz/litepaper",
+        "twitter": "https://twitter.com/voltz_xyz",
+        "discord": "https://discord.com/invite/voltzlabs"
+    },
+    {
+        "name": "Kinetix",
+        "website": "https://kinetix.finance/",
+        "description": "A DeFi Hub for Kava",
+        "tags": ["derivatives", "perpetual exchange"],
+        "chains": ["Kava"],
+        "docs": "https://info.kinetix.finance/",
+        "twitter": "https://twitter.com/KinetixFi",
+        "telegram": "https://t.me/KinetixFi",
+        "discord": "https://discord.com/invite/kinetixfi",
+        "github": "https://github.com/kinetixfi",
+        "maxLeverage": 50,
+        "leverageInfo": "https://info.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading"
+    },
+    {
+        "name": "Vega Protocol",
+        "website": "https://vega.xyz/",
+        "description": "Decentralised infrastructure that allows anyone to create products and markets, be a market maker, or trade.",
+        "tags": ["dao"],
+        "chains": ["Ethereum"],
+        "docs": "https://vega.xyz/papers/vega-protocol-whitepaper.pdf",
+        "twitter": "https://twitter.com/vegaprotocol",
+        "telegram": "https://t.me/vegacommunity",
+        "github": "https://github.com/vegaprotocol"
+    },
+    {
+        "name": "handle.fi Perps",
+        "website": "https://app.handle.fi/",
+        "description": "the global defi FX protocol. borrow, convert & trade multi-currency #stablecoins ",
+        "tags": ["forex", "bridge", "perpetual exchange", "derivatives"],
+        "chains": ["Arbitrum One"],
+        "docs": "https://docs.handle.fi/",
+        "twitter": "https://twitter.com/handle_fi",
+        "telegram": "https://t.me/handle_fi",
+        "discord": "https://discord.com/invite/77WDThbZJ4",
+        "github": "https://github.com/handle-fi",
+        "maxLeverage": 100,
+        "leverageInfo": "https://docs.handle.fi/the-platform/trade/how-to-trade#opening-a-trade"
+    },
+    {
+        "name": "Rollup Finance",
+        "website": "https://app.rollup.finance/#/dashboard",
+        "description": "Decentralized perpetual protocol on zkSync Era.",
+        "tags": ["swaps", "derivatives", "perpetual exchange"],
+        "chains": ["zkSync Era"],
+        "docs": "https://docs.rollup.finance/overview/rollup.finance-intro",
+        "twitter": "https://twitter.com/Rollup_Finance",
+        "telegram": "https://t.me/rollupfinance",
+        "discord": "https://discord.com/invite/WUSKams3Un",
+        "maxLeverage": 30
+    },
+    {
+        "name": "Alpaca FInance",
+        "website": "https://app.alpacafinance.org/",
+        "description": "Perpetual Futures allow users to have leveraged long or short exposure on assets without an expiration date. In place of expiration, users pay ongoing fees as unrealized P/L in the positions while the positions are open.",
+        "tags": ["derivatives", "perpetual exchange", "leveraged yield farming"],
+        "chains": ["Binance Smart Chain"],
+        "docs": "https://docs.alpacafinance.org/",
+        "twitter": "https://twitter.com/AlpacaFinance",
+        "telegram": "https://t.me/alpacafinance",
+        "discord": "https://discord.com/invite/alpacafinance",
+        "maxLeverage": 50,
+        "leverageInfo": "https://docs.alpacafinance.org/leveraged-yield-farming/pool-specific-parameters-1/spookyswap-pools"
+    },
+    {
+        "name": "HMX",
+        "website": "https://hmx.org/arbitrum",
+        "description": "Decentralized Perpetual Exchange.",
+        "tags": ["forex", "commodities", "derivatives"],
+        "chains": ["Arbitrum One"],
+        "docs": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+        "twitter": "https://twitter.com/HMXorg",
+        "telegram": "https://t.me/HMXorg",
+        "discord": "https://discord.com/invite/DDr7r7jjCv",
+        "github": "https://github.com/hmxorg",
+        "maxLeverage": 1000,
+        "leverageInfo": "https://docs.hmx.org/hmx/about-hmx-protocol/our-products/leveraged-trading-cross-margin-multi-collateral-management#asset-classes-listing"
     }
-
 ]
