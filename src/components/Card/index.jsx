@@ -1,4 +1,4 @@
-import { Tag, Chain } from '../';
+import { Tag, Chain, MaxLeverage } from '../';
 import { useFilter } from '../../contexts/filter'
 import { defaultFilterData } from '../Filter/consts/defaultFilterData'
 
@@ -53,5 +53,6 @@ export const Card = ({ data, onClickTag, onClickChain }) => {
                 <Tags />
             </div>
         </div>
+        <MaxLeverage maxLeverage={data.maxLeverage} leverageInfo={data.leverageInfo} className="max-leverage" />
     </div>
 }
