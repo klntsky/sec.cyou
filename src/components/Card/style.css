@@ -62,6 +62,10 @@
     flex-wrap: wrap;
 }
 
+.isMaxLeverage {
+    margin-bottom: 8px;
+}
+
 .link-icon {
     width: 0.8em;
     height: 0.8em;
