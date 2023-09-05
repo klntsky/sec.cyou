@@ -1,5 +1,5 @@
-export const defaultFilterData = {
+export const defaultFilterData = () => ({
     text: '',
     tags: {},
     chains: {},
-};
+});

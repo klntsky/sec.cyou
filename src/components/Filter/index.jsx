@@ -23,7 +23,7 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
         });
     }
 
-    const onReset = () => setFilter(defaultFilterData);
+    const onReset = () => setFilter(defaultFilterData());
 
     useEffect(() => {
         if (!filter) return;
@@ -53,9 +53,9 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
     }, [filter]);
 
     useEffect(() => {
-        const initFilterData = getFilterFromUrl({ tags, chains }, defaultFilterData);
+        const initFilterData = getFilterFromUrl({ tags, chains }, defaultFilterData());
 
-        setFilter(initFilterData || defaultFilterData);
+        setFilter(initFilterData || defaultFilterData());
     }, [])
 
     if (!filter) return null;
