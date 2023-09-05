@@ -1,0 +1,28 @@
+.card-leverage {
+    font-size: 60%;
+    padding: 2px 6px;
+    background-color: #444;
+    border-radius: 4px 0 4px 0;
+    border: 1px solid #777;
+    font-weight: bold;
+    display: flex;
+    gap: 2px;
+    cursor: default;
+}
+
+.leverage-label {
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.leverage-value {
+    color: #fff;
+}
+
+.leverage-link > .card-leverage {
+    cursor: pointer;
+}
+
+.leverage-link {
+    text-decoration: none;
+}
