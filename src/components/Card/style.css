@@ -9,8 +9,7 @@
 }
 
 .card-contents {
-    align-content: stretch;
-    border: 1px solid #444;
+    border: 1px solid #777;
     border-radius: 15px;
     background-color: rgba(100, 100, 100, 0.8);
     padding: 20px;
@@ -63,6 +62,10 @@
     flex-wrap: wrap;
 }
 
+.isMaxLeverage {
+    margin-bottom: 8px;
+}
+
 .link-icon {
     width: 0.8em;
     height: 0.8em;
@@ -72,4 +75,10 @@
 
 .card-chains {
     justify-content: right;
+}
+
+.max-leverage {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }
