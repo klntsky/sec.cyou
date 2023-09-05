@@ -1,12 +1,12 @@
 import colorHashModule from 'color-hash';
 
+import { isAppRendered } from './isAppRendered';
+
 import list from '../list.json';
 
-const ColorHash =
-    typeof document !== 'undefined'
-    && document.getElementById('container').hasChildNodes()
-        ? colorHashModule
-        : colorHashModule.default;
+const ColorHash = isAppRendered()
+    ? colorHashModule
+    : colorHashModule.default;
 
 export const getTagsAndChains = () => {
     const colorHash = new ColorHash({ lightness: [0.8, 0.9] });
