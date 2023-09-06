@@ -1,8 +1,8 @@
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import classnames from 'classnames'
 
 import { useTagColors } from '../../contexts/tagColors';
-import { classNameByObject } from '../../helpers/classNameByObject';
 import { tooltipsByTag } from './constants/tooltipsByTag';
 import { isAppRendered } from '../../helpers/isAppRendered';
 
@@ -14,11 +14,7 @@ export const Tag = ({ isActive, isFiltered, onClick, children }) => {
 
     const tagBlock = (
         <span
-            className={classNameByObject({
-                tag: true,
-                isActive,
-                isBlackedOut: !isActive && isFiltered,
-            })}
+            className={classnames('tag', { isBlackedOut: !isActive && isFiltered })}
             style={{
                 backgroundColor: tagColors[children.toLowerCase()]
             }}
