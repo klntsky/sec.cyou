@@ -17,7 +17,6 @@ export const Tag = ({ isActive, isFiltered, onClick, children }) => {
             delay={300}
             className="tag-tooltip"
             interactive={true}
-            interactiveDebounce={500}
         >
             <TagBlock
                 className={classnames({ isBlackedOut: !isActive && isFiltered })}
