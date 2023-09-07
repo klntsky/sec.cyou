@@ -1,0 +1,11 @@
+.tag {
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 60%;
+    text-transform: uppercase;
+    color: #222;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    user-select: none;
+}

@@ -1,4 +1,4 @@
-import classname from 'classname'
+import classnames from 'classnames'
 
 import './style.css'
 
@@ -7,7 +7,7 @@ export const MaxLeverage = ({ maxLeverage, leverageInfo, className }) => {
 
     const maxLeverageBlock = (
         <div
-            className={classname("card-leverage", className)}
+            className={classnames("card-leverage", className)}
             title="Maximum leverage on this platform"
         >
             <span className="leverage-value">

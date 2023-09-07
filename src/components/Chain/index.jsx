@@ -1,13 +1,10 @@
-import { classNameByObject } from '../../helpers/classNameByObject';
+import classnames from 'classnames'
 
 import './style.css';
 
 export const Chain = ({ onClick, className, name }) => {
     return <span
-        className={classNameByObject({
-            "card-chain-logo": true,
-            [className]: true,
-        })}
+        className={classnames("card-chain-logo", className)}
         title={name}
         style={{
             backgroundImage: `url('./assets/logos/${name}.svg')`,

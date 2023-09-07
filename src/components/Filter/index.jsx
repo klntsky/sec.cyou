@@ -4,6 +4,7 @@ import { Tag, ChainTag } from '../';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
 import { defaultFilterData } from './consts/defaultFilterData'
 import { useFilter } from '../../contexts/filter'
+import { getFilterFromUrl, sendFilterToUri } from './helpers'
 
 import './style.css';
 
@@ -22,7 +23,7 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
         });
     }
 
-    const onReset = () => setFilter(defaultFilterData)
+    const onReset = () => setFilter(defaultFilterData());
 
     useEffect(() => {
         if (!filter) return;
@@ -42,16 +43,19 @@ export const Filter = ({ data, tags, chains, onUpdate }) => {
             filtered = filtered.filter(platform => filteredChains.some(filteredChain => platform.chains.includes(filteredChain)))
 
         if (filter.text) {
-            const fuzzyResult = fuzzysort.go(filter.text, filtered, { keys: ['name', 'description'] });
+            const fuzzyResult = fuzzysort.go(filter.text, filtered, { keys: ['name', 'description', 'website'] });
             if (fuzzyResult)
                 filtered = fuzzyResult.map(fuzziedObj => fuzziedObj.obj)
         }
 
+        sendFilterToUri({ filteredTags, filteredChains });
         onUpdate(filtered);
     }, [filter]);
 
     useEffect(() => {
-        setFilter(defaultFilterData);
+        const initFilterData = getFilterFromUrl({ tags, chains }, defaultFilterData());
+
+        setFilter(initFilterData || defaultFilterData());
     }, [])
 
     if (!filter) return null;

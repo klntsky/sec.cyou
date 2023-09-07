@@ -1,4 +1,4 @@
-import classname from 'classname';
+import classnames from 'classnames';
 
 import { Tag, Chain, MaxLeverage } from '../';
 import { useFilter } from '../../contexts/filter'
@@ -12,7 +12,7 @@ export const Card = ({ data, onClickTag, onClickChain }) => {
     const onClickCardFilter = (field, newValue) => {
         setFilter(prevFilter => {
             return {
-                ...defaultFilterData,
+                ...defaultFilterData(),
                 [field]: {
                     [newValue]: true,
                 },
@@ -51,7 +51,7 @@ export const Card = ({ data, onClickTag, onClickChain }) => {
             <div className="card-description">
                 {data.description}
             </div>
-            <div className={classname("card-tags", { isMaxLeverage: data.maxLeverage })}>
+            <div className={classnames("card-tags", { isMaxLeverage: data.maxLeverage })}>
                 <Tags />
             </div>
         </div>

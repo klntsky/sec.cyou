@@ -16,11 +16,12 @@
   "author": "sec.cyou",
   "license": "ISC",
   "dependencies": {
+    "@tippyjs/react": "^4.2.6",
     "@vitejs/plugin-react": "^4.0.4",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
     "better-ajv-errors": "^1.2.0",
-    "classname": "^0.0.0",
+    "classnames": "^2.3.2",
     "color-hash": "^2.0.2",
     "fuzzysort": "^2.0.4",
     "react": "^18.2.0",
