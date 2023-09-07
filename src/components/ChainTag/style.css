@@ -9,6 +9,7 @@
     color: #222;
     cursor: pointer;
     font-weight: bold;
+    user-select: none;
 }
 
 .chain-tag__name {
