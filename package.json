@@ -9,7 +9,7 @@
     "dev": "vite serve",
     "build:static": "vite build --emptyOutDir --outDir ../dist/static",
     "build:server": "vite build --ssr entry-server.jsx --outDir ../dist/server --emptyOutDir",
-    "build:assets": "mkdir -p public && cp -r dist/static/* public/ && cp -r src/assets/* public/assets/",
+    "build:assets": "mkdir -p public && cp -r dist/static/* public/ && cp -r src/assets/* public/assets/ && cp -r src/icons/* public/",
     "build": "npm run build:static && npm run build:server && node build && npm run build:assets",
     "preview": "vite preview"
   },
@@ -17,6 +17,9 @@
   "license": "ISC",
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
+    "@types/color-hash": "^1.0.2",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.4",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
@@ -27,5 +30,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "typescript-language-server": "^3.3.2"
   }
 }
