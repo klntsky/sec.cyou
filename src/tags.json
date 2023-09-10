@@ -1,0 +1,21 @@
+{
+    "perpetual exchange": "Perpetual futures exchange allows to trade on future contracts without expiration date",
+    "forex": "Some platforms allow exposure to FOREX assets via tokenization",
+    "swaps": "Asset swapping is simply an exchange of one token for another",
+    "atomic swaps": "Atomic swaps are peer-to-peer exchanges without a trusted party. Atomic means that either both assets are moved, or none, which is guaranteed by software",
+    "cross-chain swaps": "Cross-chain swaps are a feature of some platforms that lets the users exchange assets on one chain for assets on another one",
+    "open source": "Open source tag indicates that the platform has fully opensourced all its software, including off-chain code and front-ends",
+    "binary options": "Binary options let traders bet on future events",
+    "aggregator": "Aggregator tag means that a platform is acting as an alternative front-end for a number of other platforms, for example, to provide best exchange rates",
+    "testnet-only": "A platform is not yet available for use with real assets",
+    "oracle": "Blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in from the real world",
+    "bridge": "Blockchain bridges are platforms that facilitate the transfer of assets and data from one blockchain ecosystem to another",
+    "automated market maker": "AMM is a type of decentralized exchange protocol that relies on mathematical algorithms to set the price of a token pair. Unlike traditional exchanges, which use an order book to match buyers and sellers, an AMM allows users to trade directly with a liquidity pool, which is funded by liquidity providers",
+    "order book": "An order book is a list of buy and sell orders for an asset, showing the price and quantity each buyer or seller is willing to transact at. It is used in traditional exchanges to match buyers with sellers",
+    "address screening": "This platform bans certain blacklisted addresses from accessing the platform",
+    "leveraged yield farming": "Leveraged yield farming is a DeFi strategy where users borrow funds to amplify their investment in a yield-generating asset or pool. This increases potential returns but also adds more risk",
+    "yield farming": "Yield farming is a DeFi strategy where users provide liquidity or stake assets in a protocol to earn rewards, often in the form of tokens or interest. The aim is to maximize returns on invested capital",
+    "derivatives": "Derivatives are financial agreements that get their value from something else, like a stock or a commodity like gold. For example, a \"future\" is a derivative where you agree to buy or sell something at a future date for a set price, and an \"option\" gives you the right to buy or sell, but not the obligation",
+    "commodities": "Commodities are products that can be bought and sold, such as gold, oil, or wheat. In a tokenized form, they can be traded on-chain",
+    "dao": "A Decentralized Autonomous Organization is a group organized online that makes decisions and rules through code and votes from its members, rather than having a single boss or board of directors. It operates on a blockchain, making it transparent and secure"
+}
