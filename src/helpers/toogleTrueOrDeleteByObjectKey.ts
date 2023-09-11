@@ -1,18 +1,13 @@
-interface StringObject {
-    [str: string]: boolean;
-}
-
-export const toogleTrueOrDeleteByObjectKey = (object: StringObject, key: string) => {
-    const isSelected = object[key] === true;
+export const toogleTrueOrDeleteByObjectKey = (map: Set<string>, key: string): Set<string> => {
+    const isSelected = map.has(key);
 
     if (isSelected) {
-        const newObject = { ...object };
-        delete newObject[key];
+        const newObject = new Set(map);
+        newObject.delete(key);
         return newObject;
     }
 
-    return {
-        ...object,
-        [key]: true,
-    }
+    const res = new Set(map);
+    res.add(key);
+    return res;
 }

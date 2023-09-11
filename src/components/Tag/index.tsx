@@ -11,12 +11,15 @@ type TagArgs = {
     isActive: boolean;
     isFiltered: boolean;
     onClick: () => void;
-    children: any;
+    children: string; // keyof (typeof tooltipsByTag);
 };
 
 export const Tag = ({ isActive, isFiltered, onClick, children }: TagArgs) => {
     const tagColors = useTagColors();
-    const tooltipText = tooltipsByTag[children];
+    const tooltipText = tooltipsByTag[children as keyof (typeof tooltipsByTag)];
+    if (typeof tooltipText !== 'string') {
+        return null;
+    }
 
     return (
         <Tooltip
@@ -30,7 +33,7 @@ export const Tag = ({ isActive, isFiltered, onClick, children }: TagArgs) => {
                 backgroundColor={tagColors.get(children.toLowerCase()) || '#FFF'}
                 onClick={onClick}
             >
-                {children}
+                {[children]}
             </TagBlock>
         </Tooltip>
     )

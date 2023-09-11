@@ -1,6 +1,8 @@
 import { serializationStringForURI, removeUrlHash } from '.'
 
-export const sendFilterToUri = ({ filteredTags, filteredChains }) => {
+export const sendFilterToUri =
+    ({ filteredTags, filteredChains } :
+     { filteredTags: string[], filteredChains: string[] }): void => {
     let newFilterUrl = '';
     if (filteredTags.length || filteredChains.length) {
         const newHashTags = filteredTags.map(filteredTag => serializationStringForURI(filteredTag))

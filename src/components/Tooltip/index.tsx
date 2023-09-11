@@ -5,8 +5,16 @@ import 'tippy.js/dist/tippy.css';
 import { isAppRendered } from '../../helpers/isAppRendered';
 
 export const Tooltip = (
-    { children, content, ...props } :
-    { children: any, content: boolean | undefined, props: any }
+    { children,
+      content,
+      delay,
+      className,
+      interactive } :
+    { children: any,
+      content: string,
+      delay: number,
+      className: string,
+      interactive: boolean }
 ) => {
     // Build time problem: https://github.com/atomiks/tippyjs-react/issues/381
     if (!isAppRendered() || !content)
@@ -14,7 +22,10 @@ export const Tooltip = (
 
     return (
         <Tippy
-            {...props}
+            content={content}
+            delay={delay}
+            className={className}
+            interactive={interactive}
             onShow={() => hideAll({ duration: 0 })}
         >
             {children}

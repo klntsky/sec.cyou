@@ -1,1 +1,1 @@
-export const serializationStringForURI = (str) => str.replaceAll(' ', '_');
+export const serializationStringForURI = (str: string) => str.replaceAll(' ', '_');

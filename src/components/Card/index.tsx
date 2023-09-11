@@ -1,15 +1,23 @@
 import classnames from 'classnames';
-
+import { Dispatch } from 'react';
 import { Tag, Chain, MaxLeverage } from '../';
-import { useFilter } from '../../contexts/filter'
+import { useFilter, Filter } from '../../contexts/filter'
 import { defaultFilterData } from '../Filter/consts/defaultFilterData'
 
 import './style.css';
 
-export const Card = ({ data, onClickTag, onClickChain }) => {
+export type FilterField = keyof Filter;
+
+export type CardProps = {
+    data: Platform,
+    onClickTag: Dispatch<string>,
+    onClickChain: Dispatch<string>,
+};
+
+export const Card = ({ data, onClickTag, onClickChain }: CardProps) => {
     const [filter, setFilter] = useFilter();
 
-    const onClickCardFilter = (field, newValue) => {
+    const onClickCardFilter = (field: keyof Filter, newValue) => {
         setFilter(prevFilter => {
             return {
                 ...defaultFilterData(),
