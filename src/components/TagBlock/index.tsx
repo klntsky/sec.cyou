@@ -3,6 +3,13 @@ import classnames from 'classnames'
 
 import './style.css';
 
+type TagBlockProps = {
+    backgroundColor: string,
+    className: string,
+    onClick(): void,
+    children: any[]
+}
+
 export const TagBlock = forwardRef(({ backgroundColor, className, onClick, children }, ref) => {
     return (
         <span

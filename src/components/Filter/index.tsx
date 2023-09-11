@@ -9,7 +9,7 @@ import { getFilterFromUrl, sendFilterToUri } from './helpers'
 import './style.css';
 
 export const Filter = ({ data, tags, chains, onUpdate }) => {
-    const [filter, setFilter] = useFilter();
+    const { filter, setFilter } = useFilter();
 
     const onChangeFilter = (field, updatedValue) => {
         setFilter(prevFilter => {

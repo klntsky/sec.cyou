@@ -1,9 +1,16 @@
-import { createContext } from "react"
+import { createContext, Context, Dispatch } from "react"
 
-type FilterType = {
+export type Filter = {
     tags: string[],
     chains: string[],
     text: string
-}
+};
 
-export const filterContext = createContext()
+export type FilterContext = {
+    filter: Filter,
+    setFilter: Dispatch<Filter>
+};
+
+export const defaultFilter: Filter = { tags: [], chains: [], text: "" };
+
+export const filterContext: Context<FilterContext> = createContext()

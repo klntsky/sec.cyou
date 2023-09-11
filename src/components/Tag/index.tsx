@@ -27,7 +27,7 @@ export const Tag = ({ isActive, isFiltered, onClick, children }: TagArgs) => {
         >
             <TagBlock
                 className={classnames({ isBlackedOut: !isActive && isFiltered })}
-                backgroundColor={tagColors[children.toLowerCase()]}
+                backgroundColor={tagColors.get(children.toLowerCase()) || '#FFF'}
                 onClick={onClick}
             >
                 {children}
