@@ -47,7 +47,7 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
                     return platform.tags.includes(filteredTag as any);
             }));
 
-        const filteredChains = Object.keys(filter.chains);
+        const filteredChains = Array.from(filter.chains);
         if (filteredChains.length)
             filtered = filtered.filter(
                 platform => filteredChains.some(
@@ -77,7 +77,7 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
     return <div id="filter">
         <div className="search-tags">
             <div className="tags">
-                {Object.keys(tags).map(tagName =>
+                {Array.from(tags).map(tagName =>
                     <Tag
                         isActive={filter.tags.has(tagName)}
                         isFiltered={!!filter.tags.size}
@@ -100,7 +100,7 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
                 )}
             </div>
         </div>
-        {Object.keys(filter.tags).length || Object.keys(filter.chains).length || filter.text
+        {Array.from(filter.tags).length || Array.from(filter.chains).length || filter.text
             ? <span id="clear-filter" onClick={onReset}>[reset]</span>
             : null
         }

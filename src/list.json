@@ -734,7 +734,8 @@
         "website": "https://linear.finance/",
         "description": "Linear is a non-custodial cross-chain compatible DeFi protocol with deep aggregated liquidity and the platform's peer-to-peer contracts allow users to mint synthetic assets (Liquids) with zero slippage.",
         "tags": [
-            "derivatives"
+            "derivatives",
+            "synthetic assets"
         ],
         "chains": [
             "Binance Smart Chain"

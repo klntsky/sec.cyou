@@ -19,10 +19,10 @@ export const ChainTag = ({ isActive, isFiltered, onClick, name }: ChainTagProps)
             <span className="chain-tag__name">
                 {name}
             </span>
-            // todo: className = 'small'
             <Chain
                 onClick={() => {}}
                 name={name}
+                className="small"
             />
         </div>
     )
