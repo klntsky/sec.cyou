@@ -3,17 +3,27 @@ import classnames from 'classnames'
 
 import './style.css';
 
-export const ChainTag = ({ isActive, isFiltered, onClick, ...props }) => {
+type ChainTagProps = {
+    isActive: boolean;
+    isFiltered: boolean;
+    onClick: () => void;
+    name: string;
+}
+
+export const ChainTag = ({ isActive, isFiltered, onClick, name }: ChainTagProps) => {
     return (
         <div
             className={classnames("chain-tag", { isBlackedOut: !isActive && isFiltered })}
             onClick={onClick}
         >
             <span className="chain-tag__name">
-                {props.name}
+                {name}
             </span>
             // todo: className = 'small'
-            <Chain {...props} />
+            <Chain
+                onClick={() => {}}
+                name={name}
+            />
         </div>
     )
 }

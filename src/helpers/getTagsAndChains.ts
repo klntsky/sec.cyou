@@ -2,7 +2,12 @@ import ColorHash from 'color-hash';
 
 import { list, Platform } from '../list';
 
-const colorHash = new ColorHash({ lightness: [0.8, 0.9] });
+console.log(ColorHash)
+
+const colorHashParams = { lightness: [0.8, 0.9] };
+const colorHash = typeof ColorHash == 'function' ?
+    // @ts-ignore
+    new ColorHash(colorHashParams) : new ColorHash.default(colorHashParams);
 const colorsByTag: Map<string, string> = new Map();
 const chainList: Set<string> = new Set();
 const filterTags: Set<string> = new Set();

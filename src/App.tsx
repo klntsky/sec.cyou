@@ -24,11 +24,7 @@ export const App = () => {
                     chains={chainList}
                     onUpdate={onUpdateFilter}
                 />
-                <Cards
-                    list={filteredList}
-                    onClickTag={(value: string) => onClickCardFilter('tags', value)}
-                    onClickChain={(value: string) => onClickCardFilter('chains', value)}
-                />
+                <Cards list={filteredList}/>
             </tagColorsContext.Provider>
         </FilterContextProvider>
     )

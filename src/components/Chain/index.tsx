@@ -4,8 +4,8 @@ import { Dispatch } from 'react'
 import './style.css';
 
 type ChainProps = {
-    onClick: Dispatch<string>,
-    className: string,
+    onClick: (_: any) => void,
+    className?: string,
     name: string
 };
 

@@ -5,7 +5,7 @@ export const FilterContextProvider = ({ children }: { children: any }) => {
     const [filter, setFilter] = useState(defaultFilter)
 
     return (
-        <filterContext.Provider value={{filter, setFilter}}>
+        <filterContext.Provider value={[filter, setFilter]}>
             {children}
         </filterContext.Provider>
     )

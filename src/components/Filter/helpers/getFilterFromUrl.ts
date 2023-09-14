@@ -1,6 +1,9 @@
 import { serializationStringForURI } from '.'
 
-export const getFilterFromUrl = ({ tags, chains } : { tags: Set<string>, chains: Set<string> }, intialFilter): { chains: Set<string>, tags: Set<string> } => {
+export const getFilterFromUrl = (
+    { tags, chains } :
+    { tags: Set<string>, chains: Set<string> }
+): { chains: Set<string>, tags: Set<string> } => {
     const hash = location.hash.replace('#', '');
 
     const res = {

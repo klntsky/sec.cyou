@@ -8,7 +8,7 @@ export default defineConfig({
   },
   plugins: [
     react({
-      include: '**/*.jsx',
+      include: '**/*.tsx',
     }),
   ],
 })

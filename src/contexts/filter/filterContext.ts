@@ -6,11 +6,8 @@ export type Filter = {
     text: string
 };
 
-export type FilterContext = {
-    filter: Filter,
-    setFilter: Dispatch<Filter>
-};
+export type FilterState = [ Filter, Dispatch<Filter> ];
 
 export const defaultFilter: Filter = { tags: new Set(), chains: new Set(), text: "" };
 
-export const filterContext: Context<FilterContext> = createContext(null as any as FilterContext)
+export const filterContext: Context<FilterState> = createContext<FilterState>(null as any as FilterState);

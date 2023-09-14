@@ -1,8 +1,8 @@
 import classnames from 'classnames';
 import { Dispatch } from 'react';
 import { Tag, Chain, MaxLeverage } from '../';
-import { useFilter, Filter } from '../../contexts/filter'
-import { defaultFilterData } from '../Filter/consts/defaultFilterData'
+import { useFilter, Filter, defaultFilter } from '../../contexts/filter'
+import { Platform } from '../../list';
 
 import './style.css';
 
@@ -10,34 +10,31 @@ export type FilterField = keyof Filter;
 
 export type CardProps = {
     data: Platform,
-    onClickTag: Dispatch<string>,
-    onClickChain: Dispatch<string>,
 };
 
-export const Card = ({ data, onClickTag, onClickChain }: CardProps) => {
+export const Card = ({ data }: CardProps) => {
     const [filter, setFilter] = useFilter();
 
-    const onClickCardFilter = (field: keyof Filter, newValue) => {
-        setFilter(prevFilter => {
-            return {
-                ...defaultFilterData(),
-                [field]: {
-                    [newValue]: true,
-                },
-            }
+    const onClickCardFilter = (field: keyof Filter, newValue: string) => {
+        setFilter({
+            ...defaultFilter,
+            [field]: (new Set(filter[field])).add(newValue)
         });
-    }
+    };
 
     const Chains = () => data.chains.map(chain =>
         <Chain
-            name={chain}
+            name={chain as any}
             key={chain}
             onClick={() => onClickCardFilter('chains', chain)}
+            className={'card-chain-logo'}
         />);
 
     const Tags = () => data.tags.map(tag =>
         <Tag
             key={tag}
+            isActive={true}
+            isFiltered={false}
             onClick={() => onClickCardFilter('tags', tag)}
         >
             {tag}
