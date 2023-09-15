@@ -14,15 +14,15 @@ export const getFilterFromUrl = (
     if (!hash)
         return res;
 
-    const serializedTags: Map<string, string> = new Map(Array.from(tags).map(x => [serializationStringForURI(x), x]));
-    const serializedChains: Map<string, string> = new Map(Array.from(chains).map(x => [serializationStringForURI(x), x]));
+    const serializedTags: Map<string, string> = new Map(
+        Array.from(tags).map(x => [serializationStringForURI(x), x]));
+    const serializedChains: Map<string, string> = new Map(
+        Array.from(chains).map(x => [serializationStringForURI(x), x]));
 
     hash.split(',').forEach(piece => {
         if (serializedTags.has(piece)) {
             res.tags.add(serializedTags.get(piece)!);
-            return;
-        }
-        if (serializedChains.has(piece)) {
+        } else if (serializedChains.has(piece)) {
             res.chains.add(serializedChains.get(piece)!);
         }
     });

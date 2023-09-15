@@ -21,14 +21,21 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
     const onChangeFilter = (field: keyof FilterType, updatedValue: string) => {
         const newValue = field === 'text'
             ? updatedValue
-            : toogleTrueOrDeleteByObjectKey(filter[field], updatedValue)
+            : toogleTrueOrDeleteByObjectKey(filter![field], updatedValue)
         setFilter({
-            ...filter,
+            ...filter!,
             [field]: newValue
         });
     }
 
     const onReset = () => setFilter(defaultFilter);
+
+    useEffect(() => {
+        setFilter({
+            ...getFilterFromUrl({ tags, chains }),
+            text: ""
+        });
+    }, [])
 
     useEffect(() => {
         if (!filter) return;
@@ -60,15 +67,6 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
         sendFilterToUri({ filteredTags, filteredChains });
         onUpdate(filtered);
     }, [filter]);
-
-    useEffect(() => {
-        const initFilterData = {
-            ...getFilterFromUrl({ tags, chains }),
-            text: ""
-        };
-
-        setFilter(initFilterData || defaultFilter);
-    }, [])
 
     if (!filter) return null;
 

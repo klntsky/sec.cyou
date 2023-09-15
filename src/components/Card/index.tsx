@@ -15,7 +15,7 @@ export const Card = ({ data }: CardProps) => {
     const onClickCardFilter = (field: keyof Filter, newValue: string) => {
         setFilter({
             ...defaultFilter,
-            [field]: (new Set(filter[field])).add(newValue)
+            [field]: (new Set(filter![field])).add(newValue)
         });
     };
 
