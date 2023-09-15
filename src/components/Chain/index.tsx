@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import './style.css';
 
 type ChainProps = {
-    onClick: (_: never) => void,
+    onClick: (_: unknown) => void,
     className?: string,
     name: string
 };
