@@ -17,5 +17,7 @@ export const tooltipsByTag = {
     "yield farming": "Yield farming is a DeFi strategy where users provide liquidity or stake assets in a protocol to earn rewards, often in the form of tokens or interest. The aim is to maximize returns on invested capital",
     "derivatives": "Derivatives are financial agreements that get their value from something else, like a stock or a commodity like gold. For example, a \"future\" is a derivative where you agree to buy or sell something at a future date for a set price, and an \"option\" gives you the right to buy or sell, but not the obligation",
     "commodities": "Commodities are products that can be bought and sold, such as gold, oil, or wheat. In a tokenized form, they can be traded on-chain",
-    "dao": "A Decentralized Autonomous Organization is a group organized online that makes decisions and rules through code and votes from its members, rather than having a single boss or board of directors. It operates on a blockchain, making it transparent and secure"
+    "dao": "A Decentralized Autonomous Organization is a group organized online that makes decisions and rules through code and votes from its members, rather than having a single boss or board of directors. It operates on a blockchain, making it transparent and secure",
+    "synthetic assets": "Synthetic assets are blockchain-based representations of traditional assets like stocks or commodities. They allow for trading and investment without owning the actual asset",
+    "flash loans": "Flash loans are loans that are borrowed and repaid within the same transaction. They require no collateral and are commonly used for arbitrage"
 }

@@ -1,35 +1,37 @@
 import classnames from 'classnames';
-
 import { Tag, Chain, MaxLeverage } from '../';
-import { useFilter } from '../../contexts/filter'
-import { defaultFilterData } from '../Filter/consts/defaultFilterData'
+import { useFilter, Filter, defaultFilter } from '../../contexts/filter'
+import { Platform } from '../../list';
 
 import './style.css';
 
-export const Card = ({ data, onClickTag, onClickChain }) => {
+export type CardProps = {
+    data: Platform,
+};
+
+export const Card = ({ data }: CardProps) => {
     const [filter, setFilter] = useFilter();
 
-    const onClickCardFilter = (field, newValue) => {
-        setFilter(prevFilter => {
-            return {
-                ...defaultFilterData(),
-                [field]: {
-                    [newValue]: true,
-                },
-            }
+    const onClickCardFilter = (field: keyof Filter, newValue: string) => {
+        setFilter({
+            ...defaultFilter,
+            [field]: (new Set(filter![field])).add(newValue)
         });
-    }
+    };
 
     const Chains = () => data.chains.map(chain =>
         <Chain
             name={chain}
             key={chain}
             onClick={() => onClickCardFilter('chains', chain)}
+            className={'card-chain-logo'}
         />);
 
     const Tags = () => data.tags.map(tag =>
         <Tag
             key={tag}
+            isActive={true}
+            isFiltered={false}
             onClick={() => onClickCardFilter('tags', tag)}
         >
             {tag}

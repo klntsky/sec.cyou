@@ -164,3 +164,7 @@ a:visited {
 #clear-filter {
     display: none;
 }
+
+.tag-tooltip {
+    font-size: 20px !important;
+}

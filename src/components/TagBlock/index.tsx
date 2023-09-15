@@ -3,7 +3,14 @@ import classnames from 'classnames'
 
 import './style.css';
 
-export const TagBlock = forwardRef(({ backgroundColor, className, onClick, children }, ref) => {
+type TagBlockProps = {
+    backgroundColor: string,
+    className: string,
+    onClick(): void,
+    children: string[]
+}
+
+export const TagBlock = forwardRef<HTMLSpanElement, TagBlockProps>(({ backgroundColor, className, onClick, children }, ref) => {
     return (
         <span
             className={classnames('tag', className)}

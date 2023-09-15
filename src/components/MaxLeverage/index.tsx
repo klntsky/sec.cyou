@@ -2,7 +2,13 @@ import classnames from 'classnames'
 
 import './style.css'
 
-export const MaxLeverage = ({ maxLeverage, leverageInfo, className }) => {
+type MaxLeverageProps = {
+    maxLeverage: number | undefined,
+    leverageInfo: string | undefined,
+    className: string
+};
+
+export const MaxLeverage = ({ maxLeverage, leverageInfo, className } : MaxLeverageProps) => {
     if (!maxLeverage) return null
 
     const maxLeverageBlock = (
