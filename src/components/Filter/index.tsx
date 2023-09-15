@@ -4,7 +4,7 @@ import { Tag, ChainTag } from '../';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
 import { useFilter, defaultFilter, Filter as FilterType } from '../../contexts/filter'
 import { getFilterFromUrl, sendFilterToUri } from './helpers'
-import { Platform } from '../../list'
+import { Platform, AllowedTag, AllowedChain } from '../../list'
 
 import './style.css';
 
@@ -18,9 +18,7 @@ type FilterProps = {
 export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
     const [ filter, setFilter ] = useFilter();
 
-    const onChangeFilter = (field: keyof FilterType, updatedValue: any) => {
-        // @ts-ignore
-        // TODO
+    const onChangeFilter = (field: keyof FilterType, updatedValue: string) => {
         const newValue = field === 'text'
             ? updatedValue
             : toogleTrueOrDeleteByObjectKey(filter[field], updatedValue)
@@ -44,14 +42,14 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
                     // TODO
                     // if (filteredTag === 'ecosystem')
                     //     return Array.from(platform.tags).some((tag: string) => (tag.search('ecosystem') !== -1) as boolean);
-                    return platform.tags.includes(filteredTag as any);
+                    return platform.tags.includes(filteredTag as AllowedTag);
             }));
 
         const filteredChains = Array.from(filter.chains);
         if (filteredChains.length)
             filtered = filtered.filter(
                 platform => filteredChains.some(
-                    filteredChain => platform.chains.includes(filteredChain as any)))
+                    filteredChain => platform.chains.includes(filteredChain as AllowedChain)))
 
         if (filter.text) {
             const fuzzyResult = fuzzysort.go(filter.text, filtered, { keys: ['name', 'description', 'website'] });

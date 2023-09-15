@@ -1,12 +1,9 @@
 import classnames from 'classnames';
-import { Dispatch } from 'react';
 import { Tag, Chain, MaxLeverage } from '../';
 import { useFilter, Filter, defaultFilter } from '../../contexts/filter'
 import { Platform } from '../../list';
 
 import './style.css';
-
-export type FilterField = keyof Filter;
 
 export type CardProps = {
     data: Platform,
@@ -24,7 +21,7 @@ export const Card = ({ data }: CardProps) => {
 
     const Chains = () => data.chains.map(chain =>
         <Chain
-            name={chain as any}
+            name={chain}
             key={chain}
             onClick={() => onClickCardFilter('chains', chain)}
             className={'card-chain-logo'}

@@ -1,22 +1,6 @@
 import entryList from './list.json';
 
-export type Platform = {
-  /**
-   * The name of the exchange.
-   */
-  name: string
-  /**
-   * The website URL of the exchange.
-   */
-  website: string
-  /**
-   * A description of the exchange.
-   */
-  description: string
-  /**
-   * Tags categorizing the exchange.
-   */
-  tags: (
+export type AllowedTag = (
     | "perpetual exchange"
     | "lending"
     | "dao"
@@ -43,15 +27,9 @@ export type Platform = {
     | "yield farming"
     | "uma ecosystem"
     | "flash loans"
-  )[]
-  /**
-   * List of supported coins.
-   */
-  coins?: string[]
-  /**
-   * List of supported blockchain chains.
-   */
-  chains: (
+);
+
+export type AllowedChain = (
     | "Aptos"
     | "Arbitrum Nova"
     | "Arbitrum One"
@@ -91,7 +69,33 @@ export type Platform = {
     | "The Graph"
     | "xDai"
     | "zkSync Era"
-  )[]
+);
+
+export type Platform = {
+  /**
+   * The name of the exchange.
+   */
+  name: string
+  /**
+   * The website URL of the exchange.
+   */
+  website: string
+  /**
+   * A description of the exchange.
+   */
+  description: string
+  /**
+   * Tags categorizing the exchange.
+   */
+  tags: AllowedTag[]
+  /**
+   * List of supported coins.
+   */
+  coins?: string[]
+  /**
+   * List of supported blockchain chains.
+   */
+  chains: AllowedChain[]
   /**
    * URL to the documentation.
    */

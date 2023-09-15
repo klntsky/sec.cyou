@@ -7,7 +7,7 @@ type TagBlockProps = {
     backgroundColor: string,
     className: string,
     onClick(): void,
-    children: any[]
+    children: string[]
 }
 
 export const TagBlock = forwardRef<HTMLSpanElement, TagBlockProps>(({ backgroundColor, className, onClick, children }, ref) => {

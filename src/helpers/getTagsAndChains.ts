@@ -2,11 +2,9 @@ import ColorHash from 'color-hash';
 
 import { list, Platform } from '../list';
 
-console.log(ColorHash)
-
 const colorHashParams = { lightness: [0.8, 0.9] };
 const colorHash = typeof ColorHash == 'function' ?
-    // @ts-ignore
+    // @ts-expect-error this is to overcome ESM -> CJS import problems
     new ColorHash(colorHashParams) : new ColorHash.default(colorHashParams);
 const colorsByTag: Map<string, string> = new Map();
 const chainList: Set<string> = new Set();

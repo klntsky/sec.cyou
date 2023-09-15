@@ -1,10 +1,9 @@
 import classnames from 'classnames'
-import { Dispatch } from 'react'
 
 import './style.css';
 
 type ChainProps = {
-    onClick: (_: any) => void,
+    onClick: (_: never) => void,
     className?: string,
     name: string
 };

@@ -1,4 +1,3 @@
-import { Dispatch } from 'react';
 import { Card } from '../Card';
 import { Platform } from '../../list';
 

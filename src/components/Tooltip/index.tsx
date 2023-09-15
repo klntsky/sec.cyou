@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import Tippy from '@tippyjs/react';
 import { hideAll } from 'tippy.js'
 import 'tippy.js/dist/tippy.css';
@@ -10,7 +11,7 @@ export const Tooltip = (
       delay,
       className,
       interactive } :
-    { children: any,
+    { children: ReactElement,
       content: string,
       delay: number,
       className: string,
