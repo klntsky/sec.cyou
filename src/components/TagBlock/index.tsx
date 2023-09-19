@@ -1,16 +1,16 @@
-import { forwardRef } from 'react';
+import { forwardRef, type ReactNode } from 'react';
 import classnames from 'classnames'
 
 import './style.css';
 
 type TagBlockProps = {
-    backgroundColor: string,
-    className: string,
+    backgroundColor?: string,
+    className?: string,
     onClick(): void,
-    children: string[]
+    children: ReactNode
 }
 
-export const TagBlock = forwardRef<HTMLSpanElement, TagBlockProps>(({ backgroundColor, className, onClick, children }, ref) => {
+export const TagBlock = forwardRef<HTMLSpanElement, TagBlockProps>(({ backgroundColor, className = '', onClick, children }, ref) => {
     return (
         <span
             className={classnames('tag', className)}

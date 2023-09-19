@@ -1,10 +1,12 @@
-import { useEffect, type Dispatch } from 'react';
+import { useEffect, type Dispatch, useState, useRef } from 'react';
 import fuzzysort from 'fuzzysort';
-import { Tag, ChainTag } from '../';
+
+import { Tag, ChainTag, TagBlock } from '..';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
 import { useFilter, defaultFilter, type Filter as FilterType } from '../../contexts/filter'
 import { getFilterFromUrl, sendFilterToUri } from './helpers'
 import { Platform, AllowedTag, AllowedChain } from '../../list'
+import { mainChains } from './contants';
 
 import './style.css';
 
@@ -17,6 +19,8 @@ type FilterProps = {
 
 export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
     const [ filter, setFilter ] = useFilter();
+    const [isChainUnfolded, setIsChainUnfolded] = useState(false);
+    const fullChainList = useRef(new Set([...mainChains, ...chains]));
 
     const onChangeFilter = (field: keyof FilterType, updatedValue: string) => {
         const newValue = field === 'text'
@@ -53,10 +57,13 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
             }));
 
         const filteredChains = Array.from(filter.chains);
-        if (filteredChains.length)
+        if (filteredChains.length) {
+            const isFilteredByMinorChain = filteredChains.some(filteredChain => !mainChains.includes(filteredChain));
+            if (isFilteredByMinorChain) setIsChainUnfolded(true);
             filtered = filtered.filter(
                 platform => filteredChains.some(
                     filteredChain => platform.chains.includes(filteredChain as AllowedChain)))
+        }
 
         if (filter.text) {
             const fuzzyResult = fuzzysort.go(filter.text, filtered, { keys: ['name', 'description', 'website'] });
@@ -85,7 +92,7 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
         </div>
         <div className="search-chains">
             <div className='chains'>
-                {Array.from(chains).map((chainName: string) =>
+                {Array.from(isChainUnfolded ? fullChainList.current : mainChains).map((chainName: string) =>
                     <ChainTag
                         isActive={filter.chains.has(chainName)}
                         isFiltered={!!filter.chains.size}
@@ -95,6 +102,15 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
                     />
                 )}
             </div>
+            <TagBlock
+                className='chain-show-more'
+                onClick={() => setIsChainUnfolded(!isChainUnfolded)}
+            >
+                {isChainUnfolded
+                    ? 'Show less ▲'
+                    : 'Show more ▼'
+                }
+            </TagBlock>
         </div>
         {Array.from(filter.tags).length || Array.from(filter.chains).length || filter.text
             ? <span id="clear-filter" onClick={onReset}>[reset]</span>
