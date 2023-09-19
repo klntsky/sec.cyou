@@ -1,3 +1,8 @@
+:root {
+    --color-text-main: #EFEFEF;
+    --color-button-background: rgba(0,0,0,0.6);
+}
+
 html {
     height: 100%;
     overflow: -moz-scrollbars-vertical;
@@ -9,7 +14,7 @@ body {
     background-repeat:   no-repeat;
     height: 100%;
     margin: 0;
-    color: #EFEFEF;
+    color: var(--color-text-main);
     font-family: Verdana, sans-serif;
     background: radial-gradient(circle, #444 0%, #222 100%);
     background-attachment: fixed;
@@ -89,7 +94,7 @@ a:visited {
 }
 
 #edit-link {
-    background-color: rgba(0,0,0,0.6);
+    background-color: var(--color-button-background);
     text-decoration: none;
     font-weight: bold;
     text-shadow: #000 0px 1px 3px;
