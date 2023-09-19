@@ -1,0 +1,23 @@
+.card-unfolded-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background-color: #222;
+    border: 1px solid var(--color-border);
+    border-left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card:hover .card-unfolded-content  {
+    border-color: var(--color-border-hover);
+}
+
+.no-icons {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    font-size: 80%;
+    letter-spacing: -4px;
+}

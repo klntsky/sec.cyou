@@ -1,21 +1,25 @@
 .card {
-    width: 100%;
     max-width: 450px;
-    flex: 0 0 auto;
+    flex: 0 0 calc(50% - 10px);
     margin: 0;
     position: relative;
-    padding: 0;
     display: flex;
+    --color-border: #777;
+    --color-border-hover: #999;
 }
 
 .card-contents {
-    border: 1px solid #777;
+    border: 1px solid var(--color-border);
     border-radius: 15px;
     background-color: rgba(100, 100, 100, 0.8);
     padding: 20px;
-    margin: 5px;
     height: auto;
     width: 100%;
+}
+
+.card.unfolded .card-contents {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 /* less transparent background for mobile */
@@ -27,7 +31,7 @@
 
 .card-contents:hover {
     background-color: #555;
-    border: 1px solid #999;
+    border: 1px solid var(--color-border-hover);
 }
 
 .card-header {
@@ -79,6 +83,15 @@
 
 .max-leverage {
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 0;
+    bottom: 0;
+}
+
+.card.unfolded .max-leverage {
+    right: 29px;
+    border-bottom-right-radius: 0px;
+}
+
+.card:hover .max-leverage {
+    border-color: var(--color-border-hover);
 }

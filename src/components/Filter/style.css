@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .search-tags > .tags,
@@ -32,7 +32,7 @@
 
 .tag.chain-show-more {
     color: #f6f6f6;
-    background-color: black;
+    background-color: var(--color-button-background);
     outline: 1px solid gray;
     padding: 5px 6px;
     width: fit-content;

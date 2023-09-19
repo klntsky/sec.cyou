@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Card, Pagination } from '..';
 import type { Platform } from '../../list';
@@ -19,6 +19,10 @@ export const Cards = (
     const sliceStart = (page - 1) * cardOnPage;
     const sliceEnd = sliceStart + cardOnPage;
 
+    useEffect(() => {
+        setPage(1);
+    }, [list]);
+
     if (!list.length)
         return <div className="nothing-found">Nothing found</div>
 
@@ -32,7 +36,12 @@ export const Cards = (
             ))}
         </div>
         {isPaginated
-            ? <Pagination pagesAtTime={9} pagesTotal={pagesTotal} onChangePage={setPage} />
+            ? <Pagination
+                page={page}
+                pagesAtTime={9}
+                pagesTotal={pagesTotal}
+                onChangePage={setPage}
+            />
             : null
         }
     </div>
