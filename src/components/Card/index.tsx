@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import { Tag, Chain, MaxLeverage } from '../';
-import { useFilter, Filter, defaultFilter } from '../../contexts/filter'
+import { useFilter, type Filter, defaultFilter } from '../../contexts/filter'
 import { Platform } from '../../list';
 
 import './style.css';

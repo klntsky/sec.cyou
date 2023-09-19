@@ -1,8 +1,8 @@
-import { useEffect, Dispatch } from 'react';
+import { useEffect, type Dispatch } from 'react';
 import fuzzysort from 'fuzzysort';
 import { Tag, ChainTag } from '../';
 import { toogleTrueOrDeleteByObjectKey } from '../../helpers/toogleTrueOrDeleteByObjectKey'
-import { useFilter, defaultFilter, Filter as FilterType } from '../../contexts/filter'
+import { useFilter, defaultFilter, type Filter as FilterType } from '../../contexts/filter'
 import { getFilterFromUrl, sendFilterToUri } from './helpers'
 import { Platform, AllowedTag, AllowedChain } from '../../list'
 

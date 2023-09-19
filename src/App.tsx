@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import { Filter } from './components/Filter';
-import { Cards } from './components';
+import { Cards, Filter } from './components';
 import { tagColorsContext } from './contexts/tagColors'
 import { tagsAndChains } from './helpers/getTagsAndChains'
 import { FilterContextProvider } from './contexts/filter'
