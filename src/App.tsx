@@ -9,7 +9,7 @@ import { list, Platform } from './list';
 
 export const App = () => {
     const [filteredList, setFilteredList] = useState(list);
-    const {colorsByTag, chainList, filterTags } = tagsAndChains;
+    const { colorsByTag, chainList, filterTags } = tagsAndChains;
 
     // TODO: remove variable
     const onUpdateFilter = (filteredList: Platform[]) => setFilteredList(filteredList);
@@ -23,7 +23,7 @@ export const App = () => {
                     chains={chainList}
                     onUpdate={onUpdateFilter}
                 />
-                <Cards list={filteredList}/>
+                <Cards list={filteredList} />
             </tagColorsContext.Provider>
         </FilterContextProvider>
     )
