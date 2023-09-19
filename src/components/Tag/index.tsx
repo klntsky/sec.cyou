@@ -1,3 +1,4 @@
+import type { MouseEventHandler } from 'react';
 import classnames from 'classnames';
 
 import { Tooltip, TagBlock } from '..';
@@ -10,7 +11,7 @@ import './style.css';
 type TagArgs = {
     isActive: boolean;
     isFiltered: boolean;
-    onClick: () => void;
+    onClick: MouseEventHandler<HTMLSpanElement>;
     children: string; // keyof (typeof tooltipsByTag);
 };
 

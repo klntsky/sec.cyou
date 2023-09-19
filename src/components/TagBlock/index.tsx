@@ -1,4 +1,5 @@
-import { forwardRef, type ReactNode } from 'react';
+import { forwardRef } from 'react';
+import type { MouseEventHandler, ReactNode } from 'react';
 import classnames from 'classnames'
 
 import './style.css';
@@ -6,7 +7,7 @@ import './style.css';
 type TagBlockProps = {
     backgroundColor?: string,
     className?: string,
-    onClick(): void,
+    onClick: MouseEventHandler<HTMLSpanElement>,
     children: ReactNode
 }
 

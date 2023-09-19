@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type MouseEvent } from 'react';
 import classnames from 'classnames';
 
 import { Tag, Chain, MaxLeverage, UnfoldedFieldIcons } from '../';
@@ -15,7 +15,8 @@ export const Card = ({ data }: CardProps) => {
     const [filter, setFilter] = useFilter();
     const [isUnfolded, setIsUnfolded] = useState(false);
 
-    const onClickCardFilter = (field: keyof Filter, newValue: string) => {
+    const onClickCardFilter = (field: keyof Filter, newValue: string, e: MouseEvent) => {
+        e.stopPropagation();
         setFilter({
             ...defaultFilter,
             [field]: (new Set(filter![field])).add(newValue)
@@ -26,7 +27,7 @@ export const Card = ({ data }: CardProps) => {
         <Chain
             name={chain}
             key={chain}
-            onClick={() => onClickCardFilter('chains', chain)}
+            onClick={(e) => onClickCardFilter('chains', chain, e)}
             className={'card-chain-logo'}
         />);
 
@@ -35,7 +36,7 @@ export const Card = ({ data }: CardProps) => {
             key={tag}
             isActive={true}
             isFiltered={false}
-            onClick={() => onClickCardFilter('tags', tag)}
+            onClick={(e) => onClickCardFilter('tags', tag, e)}
         >
             {tag}
         </Tag>)

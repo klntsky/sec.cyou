@@ -1,11 +1,12 @@
+import type { MouseEventHandler } from 'react';
 import classnames from 'classnames'
 
 import './style.css';
 
 type ChainProps = {
-    onClick: (_: unknown) => void,
     className?: string,
     name: string
+    onClick: MouseEventHandler<HTMLSpanElement>,
 };
 
 export const Chain = ({ onClick, className, name } : ChainProps) => {
