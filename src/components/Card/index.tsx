@@ -1,4 +1,4 @@
-import { useState, type MouseEvent } from 'react';
+import { useState, type MouseEvent, type HTMLAttributes } from 'react';
 import classnames from 'classnames';
 
 import { Tag, Chain, MaxLeverage, UnfoldedFieldIcons } from '../';
@@ -9,11 +9,25 @@ import './style.css';
 
 export type CardProps = {
     data: Platform,
+    style?: HTMLAttributes<HTMLDivElement>['style']
+    onClick: (name: string) => void,
 };
 
-export const Card = ({ data }: CardProps) => {
+export const Card = ({ data, style, onClick }: CardProps) => {
     const [filter, setFilter] = useFilter();
     const [isUnfolded, setIsUnfolded] = useState(false);
+
+    const onClickCard = (event: MouseEvent<HTMLDivElement>) => {
+        setIsUnfolded(!isUnfolded);
+        onClick(data.name);
+        setTimeout(
+            () => (event.target as Element).scrollIntoView({
+                block: 'center',
+                inline: 'center'
+            }),
+            100
+        );
+    };
 
     const onClickCardFilter = (field: keyof Filter, newValue: string, e: MouseEvent) => {
         e.stopPropagation();
@@ -44,7 +58,8 @@ export const Card = ({ data }: CardProps) => {
     return (
         <div
             className={classnames("card", { unfolded: isUnfolded })}
-            onClick={() => setIsUnfolded(!isUnfolded)}
+            style={style}
+            onClick={e => onClickCard(e)}
         >
             <div className="card-contents">
                 <div className='card-header'>
@@ -64,8 +79,8 @@ export const Card = ({ data }: CardProps) => {
                 <div className={classnames("card-tags", { isMaxLeverage: data.maxLeverage })}>
                     <Tags />
                 </div>
+                <MaxLeverage maxLeverage={data.maxLeverage} leverageInfo={data.leverageInfo} className="max-leverage" />
             </div>
-            <MaxLeverage maxLeverage={data.maxLeverage} leverageInfo={data.leverageInfo} className="max-leverage" />
             {isUnfolded
                 ? <UnfoldedFieldIcons {...data} />
                 : null

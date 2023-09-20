@@ -173,3 +173,8 @@ a:visited {
 .tag-tooltip {
     font-size: 20px !important;
 }
+
+.blured {
+    filter: blur(5px);
+    pointer-events: none;
+}

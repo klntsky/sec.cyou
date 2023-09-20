@@ -1,6 +1,6 @@
 import { cardFoldedFields } from ".";
 import { faGithub, faTwitter, faTelegram, faMedium, faDiscord, type IconDefinition } from '@fortawesome/free-brands-svg-icons'
-import { faInfo, faDiagramProject } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle, faDiagramProject } from '@fortawesome/free-solid-svg-icons'
 
 type FieldIconSettings = {
     faIcon: IconDefinition
@@ -23,7 +23,7 @@ export const unfoldedFieldIconSettings: Partial<Record<(typeof cardFoldedFields)
         title: 'Telegram',
     },
     docs: {
-        faIcon: faInfo,
+        faIcon: faInfoCircle,
         title: 'Documentation',
     },
     discord: {

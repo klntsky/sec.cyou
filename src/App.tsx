@@ -9,6 +9,7 @@ import { list, Platform } from './list';
 
 export const App = () => {
     const [filteredList, setFilteredList] = useState(list);
+    const [isCardSelected, setIscardSelected] = useState(false);
     const { colorsByTag, chainList, filterTags } = tagsAndChains;
 
     // TODO: remove variable
@@ -21,9 +22,13 @@ export const App = () => {
                     data={list}
                     tags={filterTags}
                     chains={chainList}
+                    className={isCardSelected ? 'blured' : undefined}
                     onUpdate={onUpdateFilter}
                 />
-                <Cards list={filteredList} />
+                <Cards
+                    list={filteredList}
+                    onClickCard={setIscardSelected}
+                />
             </tagColorsContext.Provider>
         </FilterContextProvider>
     )

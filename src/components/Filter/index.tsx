@@ -14,10 +14,11 @@ type FilterProps = {
     data: Platform[];
     tags: Set<string>;
     chains: Set<string>;
+    className?: string;
     onUpdate: Dispatch<Platform[]>;
 }
 
-export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
+export const Filter = ({ data, tags, chains, onUpdate, className }: FilterProps) => {
     const [ filter, setFilter ] = useFilter();
     const [isChainUnfolded, setIsChainUnfolded] = useState(false);
     const fullChainList = useRef(new Set([...mainChains, ...chains]));
@@ -77,52 +78,57 @@ export const Filter = ({ data, tags, chains, onUpdate }: FilterProps) => {
 
     if (!filter) return null;
 
-    return <div id="filter">
-        <div className="search-tags">
-            <div className="tags">
-                {Array.from(tags).map(tagName =>
-                    <Tag
-                        isActive={filter.tags.has(tagName)}
-                        isFiltered={!!filter.tags.size}
-                        key={tagName}
-                        onClick={() => onChangeFilter('tags', tagName)}
-                    >{tagName}</Tag>
-                )}
+    return (
+        <div
+            id="filter"
+            className={className}
+        >
+            <div className="search-tags">
+                <div className="tags">
+                    {Array.from(tags).map(tagName =>
+                        <Tag
+                            isActive={filter.tags.has(tagName)}
+                            isFiltered={!!filter.tags.size}
+                            key={tagName}
+                            onClick={() => onChangeFilter('tags', tagName)}
+                        >{tagName}</Tag>
+                    )}
+                </div>
+            </div>
+            <div className="search-chains">
+                <div className='chains'>
+                    {Array.from(isChainUnfolded ? fullChainList.current : mainChains).map((chainName: string) =>
+                        <ChainTag
+                            isActive={filter.chains.has(chainName)}
+                            isFiltered={!!filter.chains.size}
+                            name={chainName}
+                            onClick={() => onChangeFilter('chains', chainName)}
+                            key={chainName}
+                        />
+                    )}
+                </div>
+                <TagBlock
+                    className='chain-show-more'
+                    onClick={() => setIsChainUnfolded(!isChainUnfolded)}
+                >
+                    {isChainUnfolded
+                        ? 'Show less ▲'
+                        : 'Show more ▼'
+                    }
+                </TagBlock>
+            </div>
+            {Array.from(filter.tags).length || Array.from(filter.chains).length || filter.text
+                ? <span id="clear-filter" onClick={onReset}>[reset]</span>
+                : null
+            }
+            <div id="filter-input-container">
+            <input
+                id="filter-input"
+                placeholder="Search Platforms..."
+                value={filter.text}
+                onChange={event => onChangeFilter('text', event.target.value)}
+            />
             </div>
         </div>
-        <div className="search-chains">
-            <div className='chains'>
-                {Array.from(isChainUnfolded ? fullChainList.current : mainChains).map((chainName: string) =>
-                    <ChainTag
-                        isActive={filter.chains.has(chainName)}
-                        isFiltered={!!filter.chains.size}
-                        name={chainName}
-                        onClick={() => onChangeFilter('chains', chainName)}
-                        key={chainName}
-                    />
-                )}
-            </div>
-            <TagBlock
-                className='chain-show-more'
-                onClick={() => setIsChainUnfolded(!isChainUnfolded)}
-            >
-                {isChainUnfolded
-                    ? 'Show less ▲'
-                    : 'Show more ▼'
-                }
-            </TagBlock>
-        </div>
-        {Array.from(filter.tags).length || Array.from(filter.chains).length || filter.text
-            ? <span id="clear-filter" onClick={onReset}>[reset]</span>
-            : null
-        }
-        <div id="filter-input-container">
-          <input
-            id="filter-input"
-            placeholder="Search Platforms..."
-            value={filter.text}
-            onChange={event => onChangeFilter('text', event.target.value)}
-          />
-        </div>
-    </div>
+    )
 }

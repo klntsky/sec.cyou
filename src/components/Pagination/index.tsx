@@ -1,5 +1,6 @@
 import { Button } from '..'
 import { getEndPageNumbers } from './helpers'
+import classNames from 'classnames'
 
 import './style.css'
 
@@ -7,6 +8,7 @@ export interface PaginationProps {
   page: number
   pagesTotal: number
   pagesAtTime: number
+  className?: string
   onChangePage: (page: number) => void
 }
 
@@ -32,7 +34,7 @@ export const Pagination = (props: PaginationProps) => {
   }
 
   return (
-    <div className="pagination">
+    <div className={classNames(['pagination', props.className])}>
       <Button
         className={'page neigbour'}
         onClick={() => props.onChangePage(props.page - 1)}

@@ -5,7 +5,6 @@ import type { Platform } from '../../list';
 import { cardFoldedFields, unfoldedFieldIconSettings } from './constants';
 
 import './style.css'
-import classNames from 'classnames';
 
 export const UnfoldedFieldIcons = (props: Platform) => {
     const icons: ReactNode[] = [];
@@ -17,21 +16,27 @@ export const UnfoldedFieldIcons = (props: Platform) => {
             icons.push(
                 <a
                     href={String(props[field])}
-                    target="_blank"    
+                    target="_blank"
+                    className='icon-link'
+                    onClick={e => e.stopPropagation()}
                 >
                     <FontAwesomeIcon
                         icon={iconSettings.faIcon}
                         color={iconSettings.color}
                         title={iconSettings.title || field}
+                        className='icon'
                     />
+                    {iconSettings.title || field}
                 </a>
             )
     })
 
-    return <div className={classNames(['card-unfolded-content', { 'no-icons': !icons.length }])}>
-        {icons.length
-            ? icons
-            : 'Nothing'
-        }
+    return <div className='card-unfolded-content'>
+        <div className='links'>
+            {icons.length
+                ? icons
+                : 'Nothing'
+            }
+        </div>
     </div>
 }
