@@ -22,6 +22,7 @@ export const Filter = ({ data, tags, chains, onUpdate, className }: FilterProps)
     const [ filter, setFilter ] = useFilter();
     const [isChainUnfolded, setIsChainUnfolded] = useState(false);
     const fullChainList = useRef(new Set([...mainChains, ...chains]));
+    const [isFilteredByNotMainChain, setIsFilteredByNotMainChain] = useState(false);
 
     const onChangeFilter = (field: keyof FilterType, updatedValue: string) => {
         const newValue = field === 'text'
@@ -60,10 +61,13 @@ export const Filter = ({ data, tags, chains, onUpdate, className }: FilterProps)
         const filteredChains = Array.from(filter.chains);
         if (filteredChains.length) {
             const isFilteredByMinorChain = filteredChains.some(filteredChain => !mainChains.includes(filteredChain));
+            setIsFilteredByNotMainChain(isFilteredByMinorChain);
             if (isFilteredByMinorChain) setIsChainUnfolded(true);
             filtered = filtered.filter(
                 platform => filteredChains.some(
                     filteredChain => platform.chains.includes(filteredChain as AllowedChain)))
+        } else {
+            setIsFilteredByNotMainChain(false);
         }
 
         if (filter.text) {
@@ -107,15 +111,18 @@ export const Filter = ({ data, tags, chains, onUpdate, className }: FilterProps)
                         />
                     )}
                 </div>
-                <TagBlock
-                    className='chain-show-more'
-                    onClick={() => setIsChainUnfolded(!isChainUnfolded)}
-                >
-                    {isChainUnfolded
-                        ? 'Show less ▲'
-                        : 'Show more ▼'
-                    }
-                </TagBlock>
+                {isFilteredByNotMainChain
+                    ? null
+                    : <TagBlock
+                        className='chain-show-more'
+                        onClick={() => setIsChainUnfolded(!isChainUnfolded)}
+                    >
+                        {isChainUnfolded
+                            ? 'Show less ▲'
+                            : 'Show more ▼'
+                        }
+                    </TagBlock>
+                }
             </div>
             {Array.from(filter.tags).length || Array.from(filter.chains).length || filter.text
                 ? <span id="clear-filter" onClick={onReset}>[reset]</span>
