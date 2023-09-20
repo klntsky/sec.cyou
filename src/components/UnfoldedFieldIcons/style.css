@@ -1,0 +1,37 @@
+.card-unfolded-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    background-color: #222;
+    border: 1px solid var(--color-border);
+    border-left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50%;
+}
+
+.card:hover .card-unfolded-content  {
+    border-color: var(--color-border-hover);
+}
+
+.links {
+    max-height: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    column-gap: 16px;
+}
+
+.icon-link {
+    display: flex;
+    gap: 4px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.icon {
+    min-width: 20px;
+}

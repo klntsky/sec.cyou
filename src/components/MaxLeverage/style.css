@@ -3,7 +3,7 @@
     padding: 2px 6px;
     background-color: #444;
     border-radius: 4px 0 4px 0;
-    border: 1px solid #777;
+    outline: 1px solid #777;
     font-weight: bold;
     display: flex;
     gap: 2px;

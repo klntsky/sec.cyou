@@ -72,77 +72,41 @@ export type AllowedChain = (
 );
 
 export type Platform = {
-  /**
-   * The name of the exchange.
-   */
+  /** The name of the exchange. */
   name: string
-  /**
-   * The website URL of the exchange.
-   */
+  /** The website URL of the exchange. */
   website: string
-  /**
-   * A description of the exchange.
-   */
+  /** A description of the exchange. */
   description: string
-  /**
-   * Tags categorizing the exchange.
-   */
+  /** Tags categorizing the exchange. */
   tags: AllowedTag[]
-  /**
-   * List of supported coins.
-   */
+  /** List of supported coins. */
   coins?: string[]
-  /**
-   * List of supported blockchain chains.
-   */
+  /** List of supported blockchain chains. */
   chains: AllowedChain[]
-  /**
-   * URL to the documentation.
-   */
+  /** URL to the documentation. */
   docs?: string
-  /**
-   * URL to the Twitter profile.
-   */
+  /** URL to the Twitter profile. */
   twitter?: string
-  /**
-   * URL to the Discord server.
-   */
+  /** URL to the Discord server. */
   discord?: string
-  /**
-   * URL to the GitHub repository.
-   */
+  /** URL to the GitHub repository. */
   github?: string
-  /**
-   * Telegram link.
-   */
+  /** Telegram link. */
   telegram?: string
-  /**
-   * Medium URL.
-   */
+  /** Medium URL. */
   medium?: string
-  /**
-   * Mirror.xyz of the platform.
-   */
+  /** Mirror.xyz of the platform. */
   mirror?: string
-  /**
-   * Mirror.xyz of the platform.
-   */
+  /** Mirror.xyz of the platform. */
   roadmap?: string
-  /**
-   * URL to the source code.
-   */
+  /** URL to the source code. */
   sourceUrl?: string
-  /**
-   * Maximum leverage provided by the exchange.
-   */
+  /** Maximum leverage provided by the exchange. */
   maxLeverage?: number
-  /**
-   * Maximum leverage provided by the exchange.
-   */
+  /** Maximum leverage provided by the exchange. */
   leverageInfo?: string
-  /**
-   * Indicates whether the exchange is open source.
-   */
+  /** Indicates whether the exchange is open source. */
   opensource?: boolean
 };
 

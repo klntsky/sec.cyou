@@ -5,6 +5,13 @@
     max-width: 100%;
 }
 
+.search-chains {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
 .search-tags > .tags,
 .search-chains > .chains {
     display: flex;
@@ -21,4 +28,12 @@
 
 #filter-input {
     border-color: #555;
+}
+
+.tag.chain-show-more {
+    color: #f6f6f6;
+    background-color: var(--color-button-background);
+    outline: 1px solid gray;
+    padding: 5px 6px;
+    width: fit-content;
 }

@@ -1,0 +1,20 @@
+.button {
+  background-color: var(--color-button-background);
+  border: 0;
+  border-radius: 4px;
+  color: var(--color-text-main);
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button[disabled],
+.button.isActive {
+  cursor: default;
+}
+
+.button.isActive {
+  outline: 3px solid green;
+}

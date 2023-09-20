@@ -1,0 +1,20 @@
+.cards-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+    gap: 10px;
+}
+
+.nothing-found {
+    text-align: center;
+    font-size: 200%;
+}
