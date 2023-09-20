@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import { Cards, Filter } from './components';
 import { tagColorsContext } from './contexts/tagColors'
@@ -11,6 +11,7 @@ import { list, Platform } from './list';
 export const App = () => {
     const [filteredList, setFilteredList] = useState(list);
     const [isCardSelected, setIscardSelected] = useState(false);
+    const editLinkRef = useRef<HTMLAnchorElement>(null);
     const { colorsByTag, chainList, filterTags } = tagsAndChains;
 
     // TODO: remove variable
@@ -18,7 +19,7 @@ export const App = () => {
 
     const onClickCard = (isSelected: boolean) => {
         setIscardSelected(isSelected);
-        blurEditLink(isSelected);
+        blurEditLink(editLinkRef, isSelected);
     }
 
     return (
@@ -36,6 +37,14 @@ export const App = () => {
                     onClickCard={onClickCard}
                 />
             </tagColorsContext.Provider>
+            <a
+                id="edit-link"
+                target="_blank"
+                href="https://github.com/klntsky/sec.cyou/blob/master/src/list.json"
+                ref={editLinkRef}
+            >
+                EDIT THIS LIST
+            </a>
         </FilterContextProvider>
     )
 };

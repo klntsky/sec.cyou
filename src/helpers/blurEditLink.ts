@@ -1,5 +1,5 @@
-export const blurEditLink = (isBlur: boolean) => {
-    const editLinkEl = document.getElementById('edit-link')
+export const blurEditLink = (editLinkRef: React.RefObject<HTMLAnchorElement>, isBlur: boolean) => {
+    const editLinkEl = editLinkRef.current
     if (isBlur) {
         editLinkEl?.classList.add('blured')
         return

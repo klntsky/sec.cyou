@@ -70,12 +70,10 @@ a:visited {
 }
 
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
     justify-content: start;
-    align-items: auto;
     align-content: stretch;
+    gap: 16px;
 }
 
 #container:after {
@@ -85,15 +83,10 @@ a:visited {
     flex: 999 999 auto;
 }
 
-#filter {
-    margin-bottom: 16px;
-}
-
-.center {
-    text-align: center;
-}
-
 #edit-link {
+    margin-top: 8px;
+    display: flex;
+    justify-self: center;
     background-color: var(--color-button-background);
     text-decoration: none;
     font-weight: bold;
