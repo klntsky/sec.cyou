@@ -97,7 +97,8 @@ a:visited {
 #filter-input-container {
     display: flex;
     flex-direction: column;
-    padding: 20px 2%;
+    padding: 20px 0;
+    align-items: center;
 }
 
 #filter-input {
