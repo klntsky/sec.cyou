@@ -102,6 +102,7 @@ a:visited {
 }
 
 #filter-input {
+    width: 96%;
     font-size: 30px;
     background-color: #222;
     border-radius: 8px;
