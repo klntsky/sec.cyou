@@ -1,9 +1,10 @@
-import { useState, type MouseEvent, type HTMLAttributes } from 'react';
+import { useState, useRef, type MouseEvent, type HTMLAttributes } from 'react';
 import classnames from 'classnames';
 
 import { Tag, Chain, MaxLeverage, UnfoldedFieldIcons } from '../';
 import { useFilter, type Filter, defaultFilter } from '../../contexts/filter'
 import type { Platform } from '../../list';
+import { useClickOutside } from '../../hooks'
 
 import './style.css';
 
@@ -15,27 +16,35 @@ export type CardProps = {
 
 export const Card = ({ data, style, onClick }: CardProps) => {
     const [filter, setFilter] = useFilter();
-    const [isUnfolded, setIsUnfolded] = useState(false);
+    const [isFullView, setIsFullView] = useState(false);
+    const cardRef = useRef<HTMLDivElement>(null);
 
-    const onClickCard = (event: MouseEvent<HTMLDivElement>) => {
-        setIsUnfolded(!isUnfolded);
+    const onClickCard = () => {
+        setIsFullView(!isFullView);
         onClick(data.name);
         setTimeout(
-            () => (event.target as Element).scrollIntoView({
-                block: 'center',
-                inline: 'center'
-            }),
+            () => {
+                if (!isFullView) return;
+                cardRef.current?.scrollIntoView({
+                    block: 'center',
+                    inline: 'center'
+                })},
             100
         );
     };
 
     const onClickCardFilter = (field: keyof Filter, newValue: string, e: MouseEvent) => {
         e.stopPropagation();
+        if (isFullView) return;
         setFilter({
             ...defaultFilter,
             [field]: (new Set(filter![field])).add(newValue)
         });
     };
+
+    useClickOutside(cardRef, () => {
+        if (isFullView) onClickCard();
+    });
 
     const Chains = () => data.chains.map(chain =>
         <Chain
@@ -57,9 +66,10 @@ export const Card = ({ data, style, onClick }: CardProps) => {
 
     return (
         <div
-            className={classnames("card", { unfolded: isUnfolded })}
+            ref={cardRef}
+            className={classnames("card", { unfolded: isFullView })}
             style={style}
-            onClick={e => onClickCard(e)}
+            onClick={onClickCard}
         >
             <div className="card-contents">
                 <div className='card-header'>
@@ -81,7 +91,7 @@ export const Card = ({ data, style, onClick }: CardProps) => {
                 </div>
                 <MaxLeverage maxLeverage={data.maxLeverage} leverageInfo={data.leverageInfo} className="max-leverage" />
             </div>
-            {isUnfolded
+            {isFullView
                 ? <UnfoldedFieldIcons {...data} />
                 : null
             }

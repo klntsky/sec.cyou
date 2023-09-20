@@ -24,7 +24,7 @@ export const unfoldedFieldIconSettings: Partial<Record<(typeof cardFoldedFields)
     },
     docs: {
         faIcon: faInfoCircle,
-        title: 'Documentation',
+        title: 'Docs',
     },
     discord: {
         faIcon: faDiscord,

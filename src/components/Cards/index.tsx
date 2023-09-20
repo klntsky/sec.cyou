@@ -33,6 +33,10 @@ export const Cards = (
         setPage(1);
     }, [list]);
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [page]);
+
     if (!list.length)
         return <div className="nothing-found">Nothing found</div>
 

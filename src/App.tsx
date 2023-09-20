@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Cards, Filter } from './components';
 import { tagColorsContext } from './contexts/tagColors'
 import { tagsAndChains } from './helpers/getTagsAndChains'
+import { blurEditLink } from './helpers/blurEditLink'
 import { FilterContextProvider } from './contexts/filter'
 
 import { list, Platform } from './list';
@@ -14,6 +15,11 @@ export const App = () => {
 
     // TODO: remove variable
     const onUpdateFilter = (filteredList: Platform[]) => setFilteredList(filteredList);
+
+    const onClickCard = (isSelected: boolean) => {
+        setIscardSelected(isSelected);
+        blurEditLink(isSelected);
+    }
 
     return (
         <FilterContextProvider>
@@ -27,7 +33,7 @@ export const App = () => {
                 />
                 <Cards
                     list={filteredList}
-                    onClickCard={setIscardSelected}
+                    onClickCard={onClickCard}
                 />
             </tagColorsContext.Provider>
         </FilterContextProvider>
