@@ -4,6 +4,10 @@
     "items": {
         "type": "object",
         "properties": {
+            "slug": {
+                "type": "string",
+                "description": "Unique identifier of the platform."
+            },
             "name": {
                 "type": "string",
                 "minLength": 1,

@@ -129,12 +129,12 @@ export const Filter = ({ data, tags, chains, onUpdate, className }: FilterProps)
                 : null
             }
             <div id="filter-input-container">
-            <input
-                id="filter-input"
-                placeholder="Search Platforms..."
-                value={filter.text}
-                onChange={event => onChangeFilter('text', event.target.value)}
-            />
+                <input
+                    id="filter-input"
+                    placeholder="Search Platforms..."
+                    value={filter.text}
+                    onChange={event => onChangeFilter('text', event.target.value)}
+                />
             </div>
         </div>
     )

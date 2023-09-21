@@ -72,6 +72,8 @@ export type AllowedChain = (
 );
 
 export type Platform = {
+  /** Unique identifier of the platform */
+  slug?: string
   /** The name of the exchange. */
   name: string
   /** The website URL of the exchange. */
