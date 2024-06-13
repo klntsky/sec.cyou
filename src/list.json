@@ -2076,5 +2076,35 @@
         "docs": "https://www.sundaeswap.finance/papers/SundaeSwap-2021-06-01-Fundamentals.pdf",
         "twitter": "https://twitter.com/SundaeSwap",
         "discord": "https://discord.gg/Sundae"
+    },
+    {
+        "name": "STON.fi",
+        "website": "https://ston.fi/",
+        "description": "STON.fi is a decentralized automated market maker (AMM) built on the TON blockchain providing virtually zero fees, low slippage, an extremely easy interface, and direct integration with TON wallets",
+        "tags": [
+          "automated market maker", "swaps"
+        ],
+        "chains": [
+            "Ton"
+        ],
+        "docs": "https://docs.ston.fi/docs/user-section/overview",
+        "twitter": "https://twitter.com/ston_fi",
+        "telegram": "https://t.me/stonfidex",
+        "discord": "https://discord.gg/bdmaGV6qUw"
+    },
+    {
+        "name": "DeDust.io",
+        "website": "https://dedust.io/",
+      "description": "Buy, sell, and explore tokens on TON",
+        "tags": [
+          "automated market maker", "swaps", "bridge"
+        ],
+        "chains": [
+            "Ton"
+        ],
+        "docs": "https://docs.dedust.io/",
+        "twitter": "https://twitter.com/dedust_io",
+        "telegram": "https://t.me/dedust_en",
+        "github": "https://github.com/dedust-io"
     }
 ]
