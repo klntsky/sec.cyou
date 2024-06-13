@@ -1,5 +1,5 @@
 export const tooltipsByTag = {
-    "perpetual exchange": "Perpetual futures exchange allows to trade on future contracts without expiration date",
+    "perpetual futures": "Perpetual futures exchange allows to trade on future contracts without expiration date",
     "forex": "Some platforms allow exposure to FOREX assets via tokenization",
     "swaps": "Asset swapping is simply an exchange of one token for another",
     "atomic swaps": "Atomic swaps are peer-to-peer exchanges without a trusted party. Atomic means that either both assets are moved, or none, which is guaranteed by software",

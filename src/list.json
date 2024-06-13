@@ -5,7 +5,7 @@
         "website": "https://vela.exchange",
         "description": "Trade with up to 250x leverage across crypto, forex, metals and more",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "forex"
         ],
         "chains": [
@@ -24,7 +24,7 @@
         "website": "https://gmx.io/",
         "description": "Trade BTC, ETH, AVAX and other with up to 50x leverage from your wallet",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -44,7 +44,7 @@
         "website": "https://dydx.exchange/",
         "description": "Trade Perpetual Contracts with low fees, deep liquidity, and up to 20× more Buying Power",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Ethereum"
@@ -61,7 +61,7 @@
         "website": "https://app.perp.com/",
         "description": "Designed to facilitate the trading of derivatives known as perpetual contracts.",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Optimism"
@@ -76,9 +76,9 @@
         "slug": "metavault-derivatives-v2",
         "name": "Metavault Trade",
         "website": "https://metavault.trade/",
-        "description": "Decentralized spot & perpetual exchange.",
+        "description": "Decentralized spot & perpetual futures.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "binary options"
         ],
         "chains": [
@@ -97,7 +97,7 @@
         "website": "https://mux.network/",
         "description": "MUX dynamically routes positions to suited underlying trading protocols.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "aggregator"
         ],
         "chains": [
@@ -120,7 +120,7 @@
         "website": "https://kwenta.eth.limo/",
         "description": "Decentralized derivatives trading platform. Gain exposure to a variety of on-chain and real-world assets, and advanced functionality through the Kwenta Smart Margin Wallet.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "synthetic assets",
             "synthetix ecosystem"
         ],
@@ -139,7 +139,7 @@
         "website": "https://www.apex.exchange/",
         "description": "ApeX Pro is a non-custodial trading platform that delivers limitless cross-margined perpetual contracts to its metacommunity under a new social trading framework",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Ethereum",
@@ -161,7 +161,7 @@
         "website": "https://www.apollox.finance/",
         "description": "Trade crypto perpetuals with up to 500x leverage, low fees, and the lowest slippage on the market",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Binance Smart Chain"
@@ -179,7 +179,7 @@
         "website": "https://mango.markets/",
         "description": "Solana and Serum blockchain-powered platform, all-in-one trading platform for spot markets, derivatives assets, lending and borrowing",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Solana"
@@ -212,9 +212,9 @@
         "slug": "fulcrom",
         "name": "Fulcrom",
         "website": "https://fulcrom.finance/",
-        "description": "Decentralized perpetual exchange on Cronos for leverage trading with minimal fees and price impact, and staking",
+        "description": "Decentralized perpetual futures on Cronos for leverage trading with minimal fees and price impact, and staking",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Cronos"
@@ -231,7 +231,7 @@
         "website": "https://vertexprotocol.com/",
         "description": "Trade, Earn & Borrow. All in One DEX. Turbo-charged trading engine to outperform the competition. Trade on Vertex and earn $VRTX",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One"
@@ -248,7 +248,7 @@
         "website": "https://fxdx.exchange/",
         "description": "Trading in Cryptocurrency Futures with No Fees, Robust Oracle Pricing",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Optimism",
@@ -267,7 +267,7 @@
         "website": "https://trade.synfutures.com/",
         "description": "Meet the next-generation derivatives platform designed for any blockchain",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "oracle"
         ],
         "chains": [
@@ -287,7 +287,7 @@
         "website": "https://trade.polynomial.fi/",
         "description": "Polynomial trade is a decentralised derivative trading exchange powered by the Synthetix protocol on Optimism. The exchange allows leverage trading up to 50x with a faster and smoother UI and lower fees than other derivative exchanges.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "synthetix ecosystem"
         ],
         "chains": [
@@ -603,7 +603,7 @@
         "slug": "hyperliquid",
         "name": "Hyper Liquid",
         "website": "https://hyperliquid.xyz/",
-        "description": "Hyperliquid is a decentralized perpetual exchange with best-in-class speed, liquidity, and price.",
+        "description": "Hyperliquid is a decentralized perpetual futures with best-in-class speed, liquidity, and price.",
         "tags": [
             "derivatives"
         ],
@@ -796,7 +796,7 @@
         "website": "https://hakka.finance/",
         "description": "Hakka Finance is a set of decentralized derivatives & original financial instruments, forming an all-inclusive ecosystem of tools that allow users to pursue financial sovereignty.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "ecosystem",
             "swaps",
             "derivatives"
@@ -819,7 +819,7 @@
         "description": "Trade native tokens with 30x leverage and low fees. Levana is the only platform with zero insolvency risk",
         "tags": [
             "swaps",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -860,7 +860,7 @@
         "website": "https://www.ktx.finance/",
         "description": "Trade and earn cryptocurrencies with lowest fees, depthless liquidity, and leverage. Generate yield in a bull, bear, or sideways market.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -880,7 +880,7 @@
         "description": "Horizon Protocol facilitates the creation and trading of synthetic assets (zAssets) that represent the real economy.",
         "tags": [
             "forex",
-            "perpetual exchange",
+            "perpetual futures",
             "synthetic assets",
             "derivatives"
         ],
@@ -901,7 +901,7 @@
         "description": "Swap rates & fills in DeFi",
         "tags": [
             "swaps",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -926,7 +926,7 @@
         "website": "https://derivadex.com/",
         "description": "A community-governed derivatives exchange",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -941,7 +941,7 @@
         "website": "https://goodentry.io/",
         "description": "Protected Perps native to Arbitrum",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -960,7 +960,7 @@
         "website": "https://uniwhale.co/",
         "description": "Trade BTC, ETH, and more with leverage from your wallet.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -982,7 +982,7 @@
         "tags": [
             "ecosystem",
             "oracle",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1001,7 +1001,7 @@
         "website": "https://rubydex.com/en",
         "description": "Perpetual DEX for Forex, Stocks, Crypto, and NFTs",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "forex",
             "derivatives"
         ],
@@ -1023,7 +1023,7 @@
         "description": "decentralized trading and investments platform built on NEAR Protocol. Spin offers a wide range of products.",
         "tags": [
             "swaps",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1043,7 +1043,7 @@
         "website": "https://www.synthswap.io/home",
         "description": "Open Long and Short Positions with Leverage. Alternatively you can use Synthswap Futures for Swapping with 0% Price Impact. Both, Market and Limit Orders are possible.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "swaps",
             "derivatives",
             "yield farming",
@@ -1066,7 +1066,7 @@
         "description": " decentralized perpetual trading platform, offering a diverse array of markets bolstered by substantial liquidity.",
         "tags": [
             "forex",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives",
             "bridge"
         ],
@@ -1088,7 +1088,7 @@
         "tags": [
             "swaps",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Sui"
@@ -1106,7 +1106,7 @@
         "description": "Decentralized perpetuals exchange launched by Dovish, is designed to cater to both spot and perpetual trading.",
         "tags": [
             "swaps",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1123,7 +1123,7 @@
         "website": "https://zkera.fi/",
         "description": "Trade cryptocurrencies from your wallet.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1142,7 +1142,7 @@
         "description": "Trade cryptocurrencies directly from your wallet",
         "tags": [
             "bridge",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1163,7 +1163,7 @@
         "description": "Trade your favorite cryptocurrencies synthetically with zero price impact, minimal slippage and leverage.",
         "tags": [
             "synthetic assets",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1183,7 +1183,7 @@
         "description": "Margin trading and spot exchange.",
         "tags": [
             "bridge",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1202,7 +1202,7 @@
         "description": "GAMMA TRADE WITH SQUART ",
         "tags": [
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -1225,7 +1225,7 @@
             "swaps",
             "bridge",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Moonbeam"
@@ -1246,7 +1246,7 @@
         "tags": [
             "swaps",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -1285,7 +1285,7 @@
         "description": "Decentralized synthetic perp trading platform on Arbitrum and Polygon that allows you to trade crypto, forex, and commodities with up to 500x leverage directly from your wallet",
         "tags": [
             "synthetic assets",
-            "perpetual exchange",
+            "perpetual futures",
             "forex",
             "commodities",
             "dao"
@@ -1307,7 +1307,7 @@
         "website": "https://app.kiloex.io",
         "description": "perp DEX. Lightning-fast trades,risk-neutral positions and LP-friendly solutions.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives",
             "bridge"
         ],
@@ -1329,7 +1329,7 @@
             "yield farming",
             "swaps",
             "bridge",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1349,7 +1349,7 @@
         "description": "Atomic Green is the first multi-chain platform for leverage trading on DEXs in both EVM-like and non-EVM chains. The first version operates via integration in UNI V3/ARCTIC liquidity pools. Margin balances for trading are borrowed from the own lending protocol.",
         "tags": [
             "lending",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1369,7 +1369,7 @@
         "website": "https://marginx.io/",
         "description": "Community-based decentralized exchange, running via a multi-chain and on-chain infrastructure. It aims to bridge the traditional financial markets and cryptocurrency world by providing a platform where investors can buy, sell and create derivative products of any financial asset.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1389,7 +1389,7 @@
         "description": "Flux exchange is a decentralized platform for spot and perpetual trading that allows liquidity providers to earn income through market making, swap fees, and leveraged trading.",
         "tags": [
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Fantom",
@@ -1405,12 +1405,12 @@
         "slug": "tethys-perpetual",
         "name": "Tethys",
         "website": "https://tethys.finance",
-        "description": "Decentralized perpetual exchange to offer $METIS leverage trading",
+        "description": "Decentralized perpetual futures to offer $METIS leverage trading",
         "tags": [
             "bridge",
             "leveraged yield farming",
             "swaps",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1431,7 +1431,7 @@
         "tags": [
             "swaps",
             "commodities",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1450,11 +1450,11 @@
         "slug": "yfx",
         "name": "YFX",
         "website": "https://www.yfx.com/",
-        "description": " decentralized perpetual exchange with leverage, high liquidity, low fees, and no slippage.",
+        "description": " decentralized perpetual futures with leverage, high liquidity, low fees, and no slippage.",
         "tags": [
             "order book",
             "bridge",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1472,7 +1472,7 @@
         "website": "https://madmex.io/",
         "description": "GMX fork on polygon network",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1491,7 +1491,7 @@
         "website": "https://satori.finance/",
         "description": "A decentralized financial derivatives platform built on zkEVM Polygon zkEVM",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1510,7 +1510,7 @@
         "website": "https://trade.grizzly.fi",
         "description": "A decentralized exchange that provides spot and perpetual trading on crypto assets.",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1531,7 +1531,7 @@
         "tags": [
             "leveraged yield farming",
             "oracle",
-            "perpetual exchange",
+            "perpetual futures",
             "dao"
         ],
         "chains": [
@@ -1572,13 +1572,13 @@
         "slug": "morphex-v1",
         "name": "Morphex",
         "website": "https://www.morphex.trade/",
-        "description": "Decentralized perpetual exchange, Trade BTC, ETH, and other top cryptocurrencies with leverage directly from your wallet",
+        "description": "Decentralized perpetual futures, Trade BTC, ETH, and other top cryptocurrencies with leverage directly from your wallet",
         "tags": [
             "swaps",
             "order book",
             "bridge",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Fantom",
@@ -1600,7 +1600,7 @@
         "tags": [
             "order book",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -1619,7 +1619,7 @@
         "description": "Onchain Trade(OT) is a DeFi protocol where people can provide liquidity, swap, borrow and trading perpetuals.",
         "tags": [
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "zkSync Era",
@@ -1639,7 +1639,7 @@
         "description": "Decentralized Perps. Trade directly from your wallet. ",
         "tags": [
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -1679,7 +1679,7 @@
         "description": "A DeFi Hub for Kava",
         "tags": [
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Kava"
@@ -1716,7 +1716,7 @@
         "tags": [
             "forex",
             "bridge",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1738,7 +1738,7 @@
         "tags": [
             "swaps",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "zkSync Era"
@@ -1756,7 +1756,7 @@
         "description": "Perpetual Futures allow users to have leveraged long or short exposure on assets without an expiration date. In place of expiration, users pay ongoing fees as unrealized P/L in the positions while the positions are open.",
         "tags": [
             "derivatives",
-            "perpetual exchange",
+            "perpetual futures",
             "leveraged yield farming"
         ],
         "chains": [
@@ -1795,7 +1795,7 @@
         "website": "https://gains.trade/",
         "description": "Leverage trade on crypto, forex, and commodities",
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "forex",
             "commodities"
         ],
@@ -1838,7 +1838,7 @@
         "website": "https://level.finance/",
         "description": "Omnichain Liquidity Marketplace with Functional Risk Management",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -1856,7 +1856,7 @@
         "description": "Non-custodial Prime Brokerage protocol. Primex enables leveraged spot trading on your favorite DEXs, all backed by lenders.Launch.",
         "maxLeverage": 4.4,
         "tags": [
-            "perpetual exchange",
+            "perpetual futures",
             "testnet-only"
         ],
         "twitter": "https://twitter.com/primex_official",
@@ -1870,7 +1870,7 @@
         "website": "https://mycelium.xyz/",
         "description": "Trade leverage over the long-term",
         "tags": [
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One"
@@ -1939,7 +1939,7 @@
         "tags": [
             "swaps",
             "synthetic assets",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives"
         ],
         "chains": [
@@ -1955,7 +1955,7 @@
         "description": "Covo Finance provides trading with zero slippage and dynamic funding, ensuring the best price for orders without incurring extra fees.",
         "tags": [
             "forex",
-            "perpetual exchange",
+            "perpetual futures",
             "derivatives",
             "bridge"
         ],
@@ -1974,7 +1974,7 @@
         "description": "Decentralized trading platform allowing anyone, anywhere to gain exposure to any pre-public asset.",
         "tags": [
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Arbitrum One",
@@ -1994,7 +1994,7 @@
             "flash loans",
             "yield farming",
             "derivatives",
-            "perpetual exchange"
+            "perpetual futures"
         ],
         "chains": [
             "Fantom"
@@ -2106,5 +2106,36 @@
         "twitter": "https://twitter.com/dedust_io",
         "telegram": "https://t.me/dedust_en",
         "github": "https://github.com/dedust-io"
+    },
+    {
+        "name": "Storm Trade",
+        "website": "https://app.storm.tg/?ref=4A9Nrd6PYt",
+        "description": "Decentralized exchange that allows you to trade Crypto, Stock, Forex and Commodities, with leverage, both in Web App and Telegram",
+        "tags": [
+          "automated market maker", "swaps", "forex", "perpetual futures"
+        ],
+        "chains": [
+            "Ton"
+        ],
+        "maxLeverage": 50,
+        "docs": "https://docs.storm.tg/",
+        "mirror": "https://mirror.xyz/0x0e6f32FB103aFE2f1C4a484B993C1cfc0816CE8a",
+        "twitter": "https://twitter.com/storm_trade_ton",
+        "telegram": "https://t.me/storm_trade_fam"
+    },
+    {
+        "name": "Aerodrome",
+        "website": "https://aerodrome.finance/",
+        "description": "The central trading & liquidity marketplace on BASE",
+        "tags": [
+          "automated market maker", "swaps"
+        ],
+        "chains": [
+            "Base"
+        ],
+        "docs": "https://aerodrome.finance/docs",
+        "discord": "https://discord.gg/aerodrome",
+        "twitter": "https://twitter.com/AerodromeFi",
+        "github": "https://github.com/aerodrome-finance"
     }
 ]

@@ -29,7 +29,7 @@
                 "items": {
                     "type": "string",
                     "enum": [
-                        "perpetual exchange",
+                        "perpetual futures",
                         "lending",
                         "dao",
                         "forex",
