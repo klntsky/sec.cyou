@@ -435,7 +435,9 @@
             "Polygon zkEVM",
             "zkSync Era",
             "Arbitrum One",
-            "Aptos"
+            "Aptos",
+            "Linea",
+            "Base"
         ],
         "docs": "https://docs.pancakeswap.finance/",
         "github": "https://github.com/pancakeswap/",
