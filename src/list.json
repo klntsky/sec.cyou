@@ -707,7 +707,7 @@
             "perpetual futures"
         ],
         "chains": [
-            "Polygon"
+            "Polygon zkEVM"
         ],
         "docs": "https://docs.quickswap.exchange/",
         "twitter": "https://twitter.com/quickswapdex",
