@@ -703,7 +703,8 @@
         "website": "https://perps.quickswap.exchange/#/trade",
         "description": "Decentralized perpetuals exchange",
         "tags": [
-            "derivatives"
+            "derivatives",
+            "perpetual futures"
         ],
         "chains": [
             "Polygon"
